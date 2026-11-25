@@ -1,5 +1,5 @@
 import { AirportMetrics } from './metrics';
-import { normalize, scoreAirports } from './scoring';
+import { rescaleWeights, scoreAirports } from './scoring';
 
 const m = (
   code: string,
@@ -97,16 +97,16 @@ describe('scoreAirports', () => {
   });
 });
 
-describe('normalize', () => {
+describe('rescaleWeights', () => {
   it('turns relative weights into weights that sum to 1', () => {
     expect(
-      normalize({ loadFactor: 2, growth: 1, scale: 1, congestion: 0 }),
+      rescaleWeights({ loadFactor: 2, growth: 1, scale: 1, congestion: 0 }),
     ).toEqual({ loadFactor: 0.5, growth: 0.25, scale: 0.25, congestion: 0 });
   });
 
   it('throws when every active weight is zero', () => {
     expect(() =>
-      normalize({ loadFactor: 0, growth: 0, scale: 0, congestion: 0 }),
+      rescaleWeights({ loadFactor: 0, growth: 0, scale: 0, congestion: 0 }),
     ).toThrow();
   });
 });

@@ -23,7 +23,7 @@ export class AirportsService {
     const result = scoreAirports(this.data.metrics, weights);
 
     const states = options.states?.map((s) => s.trim().toUpperCase());
-    const matching = states?.length
+    const airportsInStates = states?.length
       ? result.airports.filter((a) => states.includes(a.state))
       : result.airports;
 
@@ -31,10 +31,10 @@ export class AirportsService {
       meta: {
         ...result.meta,
         filterStates: states ?? null,
-        matchingAirports: matching.length,
+        matchingAirports: airportsInStates.length,
         dataSnapshot: this.data.file.metadata.generatedAt,
       },
-      airports: matching.slice(0, options.limit ?? 10),
+      airports: airportsInStates.slice(0, options.limit ?? 10),
     };
   }
 
