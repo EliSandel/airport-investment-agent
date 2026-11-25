@@ -16,6 +16,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { parse } from 'csv-parse/sync';
+import { AirportRecord } from '../src/data/airport.types';
 
 // ---------------------------------------------------------------- config
 
@@ -32,25 +33,6 @@ const OURAIRPORTS_URL =
 const OUTPUT_PATH = resolve(__dirname, '../../data/airports.json');
 
 // ---------------------------------------------------------------- types
-
-export interface YearStats {
-  passengers: number; // departing passengers, all carriers
-  seats: number; // seats offered on departing flights
-  departures: number;
-  intlPassengers: number; // outbound international passengers
-  intlSeats: number;
-  freightLbs: number;
-}
-
-export interface AirportRecord {
-  code: string; // IATA code, e.g. "BOS"
-  name: string;
-  city: string;
-  state: string; // e.g. "MA"
-  lat: number;
-  lon: number;
-  years: Record<string, YearStats>; // keyed by year, e.g. "2025"
-}
 
 /** Shape of one row returned by the BTS API (Socrata returns numbers as strings). */
 interface BtsRow {
