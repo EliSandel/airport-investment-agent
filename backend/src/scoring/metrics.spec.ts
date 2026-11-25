@@ -41,9 +41,17 @@ describe('computeMetrics', () => {
     expect(m.loadFactor).toBeNull();
   });
 
-  it('passes congestion through, defaulting to null', () => {
+  it('computes congestion as the NAS-delayed share of arrivals', () => {
     const rec = airport({ '2025': year(1100, 1250) });
-    expect(computeMetrics(rec).congestion).toBeNull();
-    expect(computeMetrics(rec, 0.12).congestion).toBe(0.12);
+    expect(computeMetrics(rec).congestion).toBeNull(); // no delay data
+
+    rec.delays = {
+      year: '2025',
+      arrFlights: 1000,
+      arrDel15: 200,
+      nasDelayed: 80,
+      nasDelayMinutes: 5000,
+    };
+    expect(computeMetrics(rec).congestion).toBeCloseTo(0.08); // 80 / 1000
   });
 });

@@ -1,17 +1,19 @@
 {
   "metadata": {
-    "generatedAt": "2026-11-25T14:16:54.452Z",
+    "generatedAt": "2026-11-25T19:36:38.218Z",
     "years": [
       "2023",
       "2025"
     ],
     "sources": {
       "traffic": "BTS T-100 Segment Summary By Origin Airport (https://data.transportation.gov/resource/r495-tyji.json)",
-      "reference": "OurAirports (https://davidmegginson.github.io/ourairports-data/airports.csv)"
+      "reference": "OurAirports (https://davidmegginson.github.io/ourairports-data/airports.csv)",
+      "delays": "BTS Airline On-Time Statistics and Delay Causes, 2025 (downloaded snapshot)"
     },
     "notes": [
       "Passengers = departing passengers reported on T-100 by all carriers (about half of total airport traffic).",
-      "US airports only (iso_country = US); territories and foreign airports are excluded."
+      "US airports only (iso_country = US); territories and foreign airports are excluded.",
+      "Delays cover arrivals on carriers that report on-time data only."
     ]
   },
   "airports": [
@@ -39,6 +41,13 @@
           "intlSeats": 8516846,
           "freightLbs": 685153183
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 349033,
+        "arrDel15": 64708,
+        "nasDelayed": 16902.59,
+        "nasDelayMinutes": 951238
       }
     },
     {
@@ -65,6 +74,13 @@
           "intlSeats": 7580814,
           "freightLbs": 721388039
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 316544,
+        "arrDel15": 75735,
+        "nasDelayed": 21868.810000000012,
+        "nasDelayMinutes": 1233509
       }
     },
     {
@@ -91,6 +107,13 @@
           "intlSeats": 8624656,
           "freightLbs": 1332846793
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 357291,
+        "arrDel15": 89083,
+        "nasDelayed": 33967.09,
+        "nasDelayMinutes": 2058794
       }
     },
     {
@@ -117,6 +140,13 @@
           "intlSeats": 2964236,
           "freightLbs": 270533504
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 317675,
+        "arrDel15": 73936,
+        "nasDelayed": 29761.659999999993,
+        "nasDelayMinutes": 1878882
       }
     },
     {
@@ -143,6 +173,13 @@
           "intlSeats": 14384809,
           "freightLbs": 1808458839
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 196636,
+        "arrDel15": 36711,
+        "nasDelayed": 9011.3,
+        "nasDelayMinutes": 383819
       }
     },
     {
@@ -169,6 +206,13 @@
           "intlSeats": 20540109,
           "freightLbs": 1044943797
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 125035,
+        "arrDel15": 27327,
+        "nasDelayed": 10723.950000000003,
+        "nasDelayMinutes": 738669
       }
     },
     {
@@ -195,6 +239,13 @@
           "intlSeats": 5049649,
           "freightLbs": 171213206
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 160014,
+        "arrDel15": 38070,
+        "nasDelayed": 13726.24,
+        "nasDelayMinutes": 811223
       }
     },
     {
@@ -221,6 +272,13 @@
           "intlSeats": 2099113,
           "freightLbs": 85629431
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 186188,
+        "arrDel15": 38643,
+        "nasDelayed": 11599.71,
+        "nasDelayMinutes": 607405
       }
     },
     {
@@ -247,6 +305,13 @@
           "intlSeats": 14795945,
           "freightLbs": 2358624152
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 111949,
+        "arrDel15": 25567,
+        "nasDelayed": 8781.84,
+        "nasDelayMinutes": 443426
       }
     },
     {
@@ -273,6 +338,13 @@
           "intlSeats": 9621761,
           "freightLbs": 555770045
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 148159,
+        "arrDel15": 35508,
+        "nasDelayed": 14617.250000000004,
+        "nasDelayMinutes": 821118
       }
     },
     {
@@ -299,6 +371,13 @@
           "intlSeats": 2743293,
           "freightLbs": 165982188
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 242652,
+        "arrDel15": 45522,
+        "nasDelayed": 10639.83,
+        "nasDelayMinutes": 515953
       }
     },
     {
@@ -325,6 +404,13 @@
           "intlSeats": 4281058,
           "freightLbs": 510098893
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 184702,
+        "arrDel15": 38597,
+        "nasDelayed": 13022.429999999991,
+        "nasDelayMinutes": 482016
       }
     },
     {
@@ -351,6 +437,13 @@
           "intlSeats": 1756151,
           "freightLbs": 325741392
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 197376,
+        "arrDel15": 38467,
+        "nasDelayed": 8869.2,
+        "nasDelayMinutes": 406814
       }
     },
     {
@@ -377,6 +470,13 @@
           "intlSeats": 9202636,
           "freightLbs": 603325999
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 132512,
+        "arrDel15": 35504,
+        "nasDelayed": 19918.619999999995,
+        "nasDelayMinutes": 1724296
       }
     },
     {
@@ -403,6 +503,13 @@
           "intlSeats": 7768276,
           "freightLbs": 539446952
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 170366,
+        "arrDel15": 32925,
+        "nasDelayed": 12435.77,
+        "nasDelayMinutes": 698330
       }
     },
     {
@@ -429,6 +536,13 @@
           "intlSeats": 5672593,
           "freightLbs": 204179618
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 144186,
+        "arrDel15": 36943,
+        "nasDelayed": 15862.389999999989,
+        "nasDelayMinutes": 984773
       }
     },
     {
@@ -455,6 +569,13 @@
           "intlSeats": 2188825,
           "freightLbs": 186360432
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 128942,
+        "arrDel15": 24297,
+        "nasDelayed": 5903.920000000001,
+        "nasDelayMinutes": 289758
       }
     },
     {
@@ -481,6 +602,13 @@
           "intlSeats": 2143527,
           "freightLbs": 130530581
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 142251,
+        "arrDel15": 27338,
+        "nasDelayed": 5712.169999999999,
+        "nasDelayMinutes": 319924
       }
     },
     {
@@ -507,6 +635,13 @@
           "intlSeats": 966900,
           "freightLbs": 5334778
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 166036,
+        "arrDel15": 40932,
+        "nasDelayed": 17486.240000000005,
+        "nasDelayMinutes": 1213649
       }
     },
     {
@@ -533,6 +668,13 @@
           "intlSeats": 3868094,
           "freightLbs": 99547339
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 87622,
+        "arrDel15": 21101,
+        "nasDelayed": 7630.460000000002,
+        "nasDelayMinutes": 436254
       }
     },
     {
@@ -559,6 +701,13 @@
           "intlSeats": 2467514,
           "freightLbs": 411590823
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 124286,
+        "arrDel15": 29365,
+        "nasDelayed": 8425.790000000005,
+        "nasDelayMinutes": 431246
       }
     },
     {
@@ -585,6 +734,13 @@
           "intlSeats": 6499861,
           "freightLbs": 191843145
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 92909,
+        "arrDel15": 17773,
+        "nasDelayed": 5552.570000000001,
+        "nasDelayMinutes": 295057
       }
     },
     {
@@ -611,6 +767,13 @@
           "intlSeats": 822955,
           "freightLbs": 142633441
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 116500,
+        "arrDel15": 17583,
+        "nasDelayed": 3519.4199999999996,
+        "nasDelayMinutes": 144456
       }
     },
     {
@@ -637,6 +800,13 @@
           "intlSeats": 655189,
           "freightLbs": 87653415
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 99205,
+        "arrDel15": 23983,
+        "nasDelayed": 7488.889999999995,
+        "nasDelayMinutes": 333441
       }
     },
     {
@@ -663,6 +833,13 @@
           "intlSeats": 402761,
           "freightLbs": 66753905
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 108300,
+        "arrDel15": 23768,
+        "nasDelayed": 6355.649999999999,
+        "nasDelayMinutes": 320244
       }
     },
     {
@@ -689,6 +866,13 @@
           "intlSeats": 688349,
           "freightLbs": 202702658
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 96290,
+        "arrDel15": 18787,
+        "nasDelayed": 4698.249999999998,
+        "nasDelayMinutes": 265271
       }
     },
     {
@@ -715,6 +899,13 @@
           "intlSeats": 1155022,
           "freightLbs": 74431004
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 79472,
+        "arrDel15": 19037,
+        "nasDelayed": 5513.840000000001,
+        "nasDelayMinutes": 283003
       }
     },
     {
@@ -741,6 +932,13 @@
           "intlSeats": 264493,
           "freightLbs": 1072499
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 147364,
+        "arrDel15": 40296,
+        "nasDelayed": 16720.64,
+        "nasDelayMinutes": 913445
       }
     },
     {
@@ -767,6 +965,13 @@
           "intlSeats": 662903,
           "freightLbs": 128964887
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 87805,
+        "arrDel15": 19753,
+        "nasDelayed": 5504.39,
+        "nasDelayMinutes": 259054
       }
     },
     {
@@ -793,6 +998,13 @@
           "intlSeats": 2261420,
           "freightLbs": 544551579
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 58884,
+        "arrDel15": 9074,
+        "nasDelayed": 1118.2999999999997,
+        "nasDelayMinutes": 38510
       }
     },
     {
@@ -819,6 +1031,13 @@
           "intlSeats": 477854,
           "freightLbs": 14829020
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 74314,
+        "arrDel15": 14561,
+        "nasDelayed": 2916.240000000001,
+        "nasDelayMinutes": 148799
       }
     },
     {
@@ -845,6 +1064,13 @@
           "intlSeats": 462097,
           "freightLbs": 224670451
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 75152,
+        "arrDel15": 13471,
+        "nasDelayed": 2952.869999999998,
+        "nasDelayMinutes": 112004
       }
     },
     {
@@ -871,6 +1097,13 @@
           "intlSeats": 10315,
           "freightLbs": 11945498
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 71362,
+        "arrDel15": 14365,
+        "nasDelayed": 3323.12,
+        "nasDelayMinutes": 179798
       }
     },
     {
@@ -897,6 +1130,13 @@
           "intlSeats": 484564,
           "freightLbs": 62422001
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 62899,
+        "arrDel15": 14336,
+        "nasDelayed": 3426.189999999998,
+        "nasDelayMinutes": 158775
       }
     },
     {
@@ -923,6 +1163,13 @@
           "intlSeats": 301129,
           "freightLbs": 74720054
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 69040,
+        "arrDel15": 13933,
+        "nasDelayed": 2584.0899999999997,
+        "nasDelayMinutes": 125131
       }
     },
     {
@@ -949,6 +1196,13 @@
           "intlSeats": 532671,
           "freightLbs": 12066219
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 55243,
+        "arrDel15": 11104,
+        "nasDelayed": 2666.0199999999995,
+        "nasDelayMinutes": 124086
       }
     },
     {
@@ -975,6 +1229,13 @@
           "intlSeats": 326270,
           "freightLbs": 110044155
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 59349,
+        "arrDel15": 11232,
+        "nasDelayed": 1563.1999999999996,
+        "nasDelayMinutes": 63751
       }
     },
     {
@@ -1001,6 +1262,13 @@
           "intlSeats": 189510,
           "freightLbs": 38876595
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 51319,
+        "arrDel15": 11578,
+        "nasDelayed": 2831.4900000000007,
+        "nasDelayMinutes": 139008
       }
     },
     {
@@ -1027,6 +1295,13 @@
           "intlSeats": 81586,
           "freightLbs": 112615062
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 51270,
+        "arrDel15": 11631,
+        "nasDelayed": 2411.98,
+        "nasDelayMinutes": 107586
       }
     },
     {
@@ -1053,6 +1328,13 @@
           "intlSeats": 193749,
           "freightLbs": 24168796
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 46037,
+        "arrDel15": 8396,
+        "nasDelayed": 1967.0300000000007,
+        "nasDelayMinutes": 79933
       }
     },
     {
@@ -1079,6 +1361,13 @@
           "intlSeats": 226015,
           "freightLbs": 17292599
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 35312,
+        "arrDel15": 7924,
+        "nasDelayed": 2674.6400000000003,
+        "nasDelayMinutes": 133018
       }
     },
     {
@@ -1105,6 +1394,13 @@
           "intlSeats": 598389,
           "freightLbs": 104668080
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 42400,
+        "arrDel15": 9467,
+        "nasDelayed": 1695.6200000000006,
+        "nasDelayMinutes": 76774
       }
     },
     {
@@ -1131,6 +1427,13 @@
           "intlSeats": 372622,
           "freightLbs": 32791807
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 47810,
+        "arrDel15": 8441,
+        "nasDelayed": 1071.88,
+        "nasDelayMinutes": 40439
       }
     },
     {
@@ -1157,6 +1460,13 @@
           "intlSeats": 55867,
           "freightLbs": 933726763
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 51809,
+        "arrDel15": 11576,
+        "nasDelayed": 2702.8500000000017,
+        "nasDelayMinutes": 134119
       }
     },
     {
@@ -1183,6 +1493,13 @@
           "intlSeats": 176648,
           "freightLbs": 76487493
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 45309,
+        "arrDel15": 10173,
+        "nasDelayed": 2239.799999999999,
+        "nasDelayMinutes": 105060
       }
     },
     {
@@ -1209,6 +1526,13 @@
           "intlSeats": 143934,
           "freightLbs": 74140738
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 46801,
+        "arrDel15": 10335,
+        "nasDelayed": 2295.5299999999984,
+        "nasDelayMinutes": 112722
       }
     },
     {
@@ -1235,6 +1559,13 @@
           "intlSeats": 592979,
           "freightLbs": 530256833
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 35937,
+        "arrDel15": 6596,
+        "nasDelayed": 662.88,
+        "nasDelayMinutes": 23784
       }
     },
     {
@@ -1261,6 +1592,13 @@
           "intlSeats": 41667,
           "freightLbs": 2793989
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 47000,
+        "arrDel15": 10757,
+        "nasDelayed": 2794.0499999999997,
+        "nasDelayMinutes": 127388
       }
     },
     {
@@ -1287,6 +1625,13 @@
           "intlSeats": 195128,
           "freightLbs": 1217513261
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 43302,
+        "arrDel15": 10652,
+        "nasDelayed": 2559.3900000000012,
+        "nasDelayMinutes": 127638
       }
     },
     {
@@ -1339,6 +1684,13 @@
           "intlSeats": 13090,
           "freightLbs": 54692786
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 30944,
+        "arrDel15": 7699,
+        "nasDelayed": 1994.1799999999998,
+        "nasDelayMinutes": 95702
       }
     },
     {
@@ -1365,6 +1717,13 @@
           "intlSeats": 396255,
           "freightLbs": 813921253
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 26751,
+        "arrDel15": 5730,
+        "nasDelayed": 861.3500000000001,
+        "nasDelayMinutes": 34140
       }
     },
     {
@@ -1391,6 +1750,13 @@
           "intlSeats": 123137,
           "freightLbs": 25200902
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 25506,
+        "arrDel15": 3048,
+        "nasDelayed": 368.21999999999997,
+        "nasDelayMinutes": 13465
       }
     },
     {
@@ -1417,6 +1783,13 @@
           "intlSeats": 89006,
           "freightLbs": 114947546
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 24447,
+        "arrDel15": 5626,
+        "nasDelayed": 1220.5300000000004,
+        "nasDelayMinutes": 56353
       }
     },
     {
@@ -1443,6 +1816,13 @@
           "intlSeats": 246,
           "freightLbs": 35248915
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 31283,
+        "arrDel15": 6164,
+        "nasDelayed": 1159.4400000000007,
+        "nasDelayMinutes": 54885
       }
     },
     {
@@ -1469,6 +1849,13 @@
           "intlSeats": 7202,
           "freightLbs": 13117161
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 27417,
+        "arrDel15": 6350,
+        "nasDelayed": 1717.9699999999991,
+        "nasDelayMinutes": 83098
       }
     },
     {
@@ -1495,6 +1882,13 @@
           "intlSeats": 36711,
           "freightLbs": 45037582
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 30628,
+        "arrDel15": 7265,
+        "nasDelayed": 1467.0400000000006,
+        "nasDelayMinutes": 78321
       }
     },
     {
@@ -1521,6 +1915,13 @@
           "intlSeats": 56619,
           "freightLbs": 5814005131
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 22733,
+        "arrDel15": 4743,
+        "nasDelayed": 1463.9399999999998,
+        "nasDelayMinutes": 49035
       }
     },
     {
@@ -1547,6 +1948,13 @@
           "intlSeats": 14,
           "freightLbs": 29293456
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 26362,
+        "arrDel15": 5402,
+        "nasDelayed": 847.9199999999996,
+        "nasDelayMinutes": 37445
       }
     },
     {
@@ -1573,6 +1981,13 @@
           "intlSeats": 49,
           "freightLbs": 41571054
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 25860,
+        "arrDel15": 5889,
+        "nasDelayed": 1113.8799999999992,
+        "nasDelayMinutes": 52667
       }
     },
     {
@@ -1599,6 +2014,13 @@
           "intlSeats": 600,
           "freightLbs": 33243698
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 29024,
+        "arrDel15": 5292,
+        "nasDelayed": 998.6100000000004,
+        "nasDelayMinutes": 42210
       }
     },
     {
@@ -1625,6 +2047,13 @@
           "intlSeats": 4139,
           "freightLbs": 30616700
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 26115,
+        "arrDel15": 6530,
+        "nasDelayed": 1473.0899999999988,
+        "nasDelayMinutes": 69842
       }
     },
     {
@@ -1651,6 +2080,13 @@
           "intlSeats": 2743,
           "freightLbs": 94950852
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 25810,
+        "arrDel15": 6398,
+        "nasDelayed": 1469.66,
+        "nasDelayMinutes": 73653
       }
     },
     {
@@ -1677,6 +2113,13 @@
           "intlSeats": 540,
           "freightLbs": 17915628
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 24432,
+        "arrDel15": 6107,
+        "nasDelayed": 1492.7799999999997,
+        "nasDelayMinutes": 70677
       }
     },
     {
@@ -1703,6 +2146,13 @@
           "intlSeats": 53148,
           "freightLbs": 60917968
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 22874,
+        "arrDel15": 4460,
+        "nasDelayed": 696.4500000000002,
+        "nasDelayMinutes": 29831
       }
     },
     {
@@ -1729,6 +2179,13 @@
           "intlSeats": 3320,
           "freightLbs": 3349291451
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 26230,
+        "arrDel15": 6320,
+        "nasDelayed": 1404.8399999999992,
+        "nasDelayMinutes": 69247
       }
     },
     {
@@ -1755,6 +2212,13 @@
           "intlSeats": 1550,
           "freightLbs": 22647158
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 25416,
+        "arrDel15": 5937,
+        "nasDelayed": 1105.4099999999994,
+        "nasDelayMinutes": 60584
       }
     },
     {
@@ -1781,6 +2245,13 @@
           "intlSeats": 243,
           "freightLbs": 3090218903
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 26610,
+        "arrDel15": 5832,
+        "nasDelayed": 1373.4900000000005,
+        "nasDelayMinutes": 67302
       }
     },
     {
@@ -1807,6 +2278,13 @@
           "intlSeats": 14721,
           "freightLbs": 159218
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 17304,
+        "arrDel15": 3770,
+        "nasDelayed": 1183.4000000000003,
+        "nasDelayMinutes": 62514
       }
     },
     {
@@ -1833,6 +2311,13 @@
           "intlSeats": 58,
           "freightLbs": 22711582
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 21066,
+        "arrDel15": 5077,
+        "nasDelayed": 1089.6600000000003,
+        "nasDelayMinutes": 52319
       }
     },
     {
@@ -1859,6 +2344,13 @@
           "intlSeats": 338,
           "freightLbs": 12685976
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 17569,
+        "arrDel15": 4264,
+        "nasDelayed": 820.9400000000007,
+        "nasDelayMinutes": 38669
       }
     },
     {
@@ -1885,6 +2377,13 @@
           "intlSeats": 1476,
           "freightLbs": 38713896
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 21958,
+        "arrDel15": 4277,
+        "nasDelayed": 811.2200000000001,
+        "nasDelayMinutes": 30244
       }
     },
     {
@@ -1911,6 +2410,13 @@
           "intlSeats": 546,
           "freightLbs": 10233272
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 22954,
+        "arrDel15": 5271,
+        "nasDelayed": 1326.3099999999995,
+        "nasDelayMinutes": 63369
       }
     },
     {
@@ -1937,6 +2443,13 @@
           "intlSeats": 37112,
           "freightLbs": 38289843
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15795,
+        "arrDel15": 2113,
+        "nasDelayed": 415.1,
+        "nasDelayMinutes": 14231
       }
     },
     {
@@ -1963,6 +2476,13 @@
           "intlSeats": 36749,
           "freightLbs": 70979119
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 19316,
+        "arrDel15": 4257,
+        "nasDelayed": 583.9000000000001,
+        "nasDelayMinutes": 25367
       }
     },
     {
@@ -1989,6 +2509,13 @@
           "intlSeats": 1133,
           "freightLbs": 17681474
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 20574,
+        "arrDel15": 4083,
+        "nasDelayed": 642.25,
+        "nasDelayMinutes": 27477
       }
     },
     {
@@ -2015,6 +2542,13 @@
           "intlSeats": 627,
           "freightLbs": 22663635
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 16724,
+        "arrDel15": 2814,
+        "nasDelayed": 360.3,
+        "nasDelayMinutes": 16790
       }
     },
     {
@@ -2041,6 +2575,13 @@
           "intlSeats": 11832,
           "freightLbs": 29576930
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15664,
+        "arrDel15": 1975,
+        "nasDelayed": 229.0699999999999,
+        "nasDelayMinutes": 8103
       }
     },
     {
@@ -2067,6 +2608,13 @@
           "intlSeats": 193,
           "freightLbs": 22607116
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 22331,
+        "arrDel15": 5743,
+        "nasDelayed": 1418.5399999999995,
+        "nasDelayMinutes": 70654
       }
     },
     {
@@ -2093,6 +2641,13 @@
           "intlSeats": 365,
           "freightLbs": 796130
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15507,
+        "arrDel15": 3537,
+        "nasDelayed": 1079.21,
+        "nasDelayMinutes": 57674
       }
     },
     {
@@ -2119,6 +2674,13 @@
           "intlSeats": 235486,
           "freightLbs": 199067
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15273,
+        "arrDel15": 2935,
+        "nasDelayed": 671.5100000000001,
+        "nasDelayMinutes": 33521
       }
     },
     {
@@ -2145,6 +2707,13 @@
           "intlSeats": 28,
           "freightLbs": 20530836
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 20848,
+        "arrDel15": 4734,
+        "nasDelayed": 1004.7400000000002,
+        "nasDelayMinutes": 51386
       }
     },
     {
@@ -2171,6 +2740,13 @@
           "intlSeats": 327,
           "freightLbs": 40612707
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 20050,
+        "arrDel15": 4682,
+        "nasDelayed": 819.0600000000003,
+        "nasDelayMinutes": 42864
       }
     },
     {
@@ -2197,6 +2773,13 @@
           "intlSeats": 382,
           "freightLbs": 14368713
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 18230,
+        "arrDel15": 4243,
+        "nasDelayed": 887.29,
+        "nasDelayMinutes": 43493
       }
     },
     {
@@ -2223,6 +2806,13 @@
           "intlSeats": 929,
           "freightLbs": 20351600
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 16774,
+        "arrDel15": 4224,
+        "nasDelayed": 847.3899999999995,
+        "nasDelayMinutes": 40685
       }
     },
     {
@@ -2249,6 +2839,13 @@
           "intlSeats": 5232,
           "freightLbs": 86894
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10497,
+        "arrDel15": 3784,
+        "nasDelayed": 829.39,
+        "nasDelayMinutes": 52885
       }
     },
     {
@@ -2275,6 +2872,13 @@
           "intlSeats": 152,
           "freightLbs": 7603280
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15283,
+        "arrDel15": 3432,
+        "nasDelayed": 767.7499999999997,
+        "nasDelayMinutes": 38852
       }
     },
     {
@@ -2301,6 +2905,13 @@
           "intlSeats": 81,
           "freightLbs": 62664241
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 19294,
+        "arrDel15": 4628,
+        "nasDelayed": 1133.33,
+        "nasDelayMinutes": 53777
       }
     },
     {
@@ -2327,6 +2938,13 @@
           "intlSeats": 358,
           "freightLbs": 36460383
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 16124,
+        "arrDel15": 3928,
+        "nasDelayed": 929.5299999999999,
+        "nasDelayMinutes": 42016
       }
     },
     {
@@ -2353,6 +2971,13 @@
           "intlSeats": 262,
           "freightLbs": 1179338
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 12441,
+        "arrDel15": 2516,
+        "nasDelayed": 666.4699999999999,
+        "nasDelayMinutes": 24986
       }
     },
     {
@@ -2379,6 +3004,13 @@
           "intlSeats": 169,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 9415,
+        "arrDel15": 3009,
+        "nasDelayed": 820.6700000000001,
+        "nasDelayMinutes": 47743
       }
     },
     {
@@ -2405,6 +3037,13 @@
           "intlSeats": 288778,
           "freightLbs": 9273483
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 13572,
+        "arrDel15": 2705,
+        "nasDelayed": 472.45000000000016,
+        "nasDelayMinutes": 23071
       }
     },
     {
@@ -2431,6 +3070,13 @@
           "intlSeats": 336,
           "freightLbs": 16448326
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 16331,
+        "arrDel15": 3856,
+        "nasDelayed": 825.0300000000003,
+        "nasDelayMinutes": 40901
       }
     },
     {
@@ -2457,6 +3103,13 @@
           "intlSeats": 118,
           "freightLbs": 6065662
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 13273,
+        "arrDel15": 2925,
+        "nasDelayed": 652.5499999999997,
+        "nasDelayMinutes": 29956
       }
     },
     {
@@ -2483,6 +3136,13 @@
           "intlSeats": 1969,
           "freightLbs": 7771690
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 13817,
+        "arrDel15": 3470,
+        "nasDelayed": 655.4599999999998,
+        "nasDelayMinutes": 38406
       }
     },
     {
@@ -2509,6 +3169,13 @@
           "intlSeats": 200,
           "freightLbs": 17494
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 18193,
+        "arrDel15": 4047,
+        "nasDelayed": 1095.5099999999995,
+        "nasDelayMinutes": 49255
       }
     },
     {
@@ -2535,6 +3202,13 @@
           "intlSeats": 0,
           "freightLbs": 12559141
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 14700,
+        "arrDel15": 3595,
+        "nasDelayed": 684.9600000000004,
+        "nasDelayMinutes": 34374
       }
     },
     {
@@ -2561,6 +3235,13 @@
           "intlSeats": 0,
           "freightLbs": 69778
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10722,
+        "arrDel15": 2340,
+        "nasDelayed": 546.46,
+        "nasDelayMinutes": 26671
       }
     },
     {
@@ -2587,6 +3268,13 @@
           "intlSeats": 8525,
           "freightLbs": 10279
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 12375,
+        "arrDel15": 2924,
+        "nasDelayed": 723.0200000000001,
+        "nasDelayMinutes": 35966
       }
     },
     {
@@ -2613,6 +3301,13 @@
           "intlSeats": 9,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7713,
+        "arrDel15": 1868,
+        "nasDelayed": 694.1899999999999,
+        "nasDelayMinutes": 42458
       }
     },
     {
@@ -2639,6 +3334,13 @@
           "intlSeats": 115,
           "freightLbs": 11012992
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15314,
+        "arrDel15": 3572,
+        "nasDelayed": 835.1300000000003,
+        "nasDelayMinutes": 41764
       }
     },
     {
@@ -2665,6 +3367,13 @@
           "intlSeats": 10,
           "freightLbs": 14004
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 13064,
+        "arrDel15": 3063,
+        "nasDelayed": 788.8299999999997,
+        "nasDelayMinutes": 39138
       }
     },
     {
@@ -2691,6 +3400,13 @@
           "intlSeats": 2600,
           "freightLbs": 736657
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6525,
+        "arrDel15": 1375,
+        "nasDelayed": 440.67999999999995,
+        "nasDelayMinutes": 19511
       }
     },
     {
@@ -2717,6 +3433,13 @@
           "intlSeats": 240,
           "freightLbs": 65235860
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 15532,
+        "arrDel15": 3484,
+        "nasDelayed": 818.0000000000002,
+        "nasDelayMinutes": 40972
       }
     },
     {
@@ -2743,6 +3466,13 @@
           "intlSeats": 76,
           "freightLbs": 17490
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10518,
+        "arrDel15": 2303,
+        "nasDelayed": 534.4500000000003,
+        "nasDelayMinutes": 24294
       }
     },
     {
@@ -2769,6 +3499,13 @@
           "intlSeats": 8,
           "freightLbs": 13729331
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 12821,
+        "arrDel15": 3065,
+        "nasDelayed": 589.6600000000002,
+        "nasDelayMinutes": 29389
       }
     },
     {
@@ -2795,6 +3532,13 @@
           "intlSeats": 998,
           "freightLbs": 1768671
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10720,
+        "arrDel15": 2422,
+        "nasDelayed": 571.0800000000002,
+        "nasDelayMinutes": 26872
       }
     },
     {
@@ -2821,6 +3565,13 @@
           "intlSeats": 0,
           "freightLbs": 30803161
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 13686,
+        "arrDel15": 3215,
+        "nasDelayed": 627.3000000000003,
+        "nasDelayMinutes": 35114
       }
     },
     {
@@ -2847,6 +3598,13 @@
           "intlSeats": 0,
           "freightLbs": 1219868
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 9421,
+        "arrDel15": 1731,
+        "nasDelayed": 280.31999999999994,
+        "nasDelayMinutes": 12661
       }
     },
     {
@@ -2873,6 +3631,13 @@
           "intlSeats": 59,
           "freightLbs": 62662418
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10973,
+        "arrDel15": 2578,
+        "nasDelayed": 512.5099999999998,
+        "nasDelayMinutes": 25578
       }
     },
     {
@@ -2899,6 +3664,13 @@
           "intlSeats": 44,
           "freightLbs": 33872838
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 9477,
+        "arrDel15": 2315,
+        "nasDelayed": 535.5400000000001,
+        "nasDelayMinutes": 26567
       }
     },
     {
@@ -2925,6 +3697,13 @@
           "intlSeats": 66,
           "freightLbs": 5279
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 11078,
+        "arrDel15": 2791,
+        "nasDelayed": 538.66,
+        "nasDelayMinutes": 29735
       }
     },
     {
@@ -2951,6 +3730,13 @@
           "intlSeats": 615,
           "freightLbs": 115649
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5286,
+        "arrDel15": 1236,
+        "nasDelayed": 199.01,
+        "nasDelayMinutes": 9057
       }
     },
     {
@@ -2977,6 +3763,13 @@
           "intlSeats": 1824,
           "freightLbs": 2414646
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 11291,
+        "arrDel15": 2435,
+        "nasDelayed": 477.5899999999999,
+        "nasDelayMinutes": 29466
       }
     },
     {
@@ -3003,6 +3796,13 @@
           "intlSeats": 0,
           "freightLbs": 14536975
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 11583,
+        "arrDel15": 2680,
+        "nasDelayed": 721.7599999999996,
+        "nasDelayMinutes": 36270
       }
     },
     {
@@ -3029,6 +3829,13 @@
           "intlSeats": 32,
           "freightLbs": 281123
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7899,
+        "arrDel15": 1629,
+        "nasDelayed": 693.02,
+        "nasDelayMinutes": 33249
       }
     },
     {
@@ -3055,6 +3862,13 @@
           "intlSeats": 30,
           "freightLbs": 50752004
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 8887,
+        "arrDel15": 2212,
+        "nasDelayed": 463.1300000000001,
+        "nasDelayMinutes": 24657
       }
     },
     {
@@ -3081,6 +3895,13 @@
           "intlSeats": 95,
           "freightLbs": 1390768
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 8666,
+        "arrDel15": 1580,
+        "nasDelayed": 340.21,
+        "nasDelayMinutes": 14749
       }
     },
     {
@@ -3133,6 +3954,13 @@
           "intlSeats": 551,
           "freightLbs": 2517427
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 9391,
+        "arrDel15": 2197,
+        "nasDelayed": 558.2399999999998,
+        "nasDelayMinutes": 25628
       }
     },
     {
@@ -3159,6 +3987,13 @@
           "intlSeats": 0,
           "freightLbs": 11533599
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6649,
+        "arrDel15": 682,
+        "nasDelayed": 8.74,
+        "nasDelayMinutes": 254
       }
     },
     {
@@ -3185,6 +4020,13 @@
           "intlSeats": 36,
           "freightLbs": 99661195
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7910,
+        "arrDel15": 1798,
+        "nasDelayed": 298.4800000000001,
+        "nasDelayMinutes": 12851
       }
     },
     {
@@ -3211,6 +4053,13 @@
           "intlSeats": 10,
           "freightLbs": 34450696
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 11016,
+        "arrDel15": 2638,
+        "nasDelayed": 610.3799999999999,
+        "nasDelayMinutes": 30001
       }
     },
     {
@@ -3237,6 +4086,13 @@
           "intlSeats": 0,
           "freightLbs": 858220
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 8607,
+        "arrDel15": 1489,
+        "nasDelayed": 302.44,
+        "nasDelayMinutes": 11604
       }
     },
     {
@@ -3263,6 +4119,13 @@
           "intlSeats": 427,
           "freightLbs": 12101551
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10425,
+        "arrDel15": 2470,
+        "nasDelayed": 534.7300000000002,
+        "nasDelayMinutes": 28447
       }
     },
     {
@@ -3289,6 +4152,13 @@
           "intlSeats": 38,
           "freightLbs": 7468891
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 10664,
+        "arrDel15": 2767,
+        "nasDelayed": 522.4499999999999,
+        "nasDelayMinutes": 28576
       }
     },
     {
@@ -3315,6 +4185,13 @@
           "intlSeats": 18,
           "freightLbs": 4912294
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 8333,
+        "arrDel15": 1970,
+        "nasDelayed": 398.09000000000003,
+        "nasDelayMinutes": 22522
       }
     },
     {
@@ -3341,6 +4218,13 @@
           "intlSeats": 10,
           "freightLbs": 6876689
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 9074,
+        "arrDel15": 1950,
+        "nasDelayed": 337.49,
+        "nasDelayMinutes": 15836
       }
     },
     {
@@ -3367,6 +4251,13 @@
           "intlSeats": 67780,
           "freightLbs": 15939508
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5754,
+        "arrDel15": 1127,
+        "nasDelayed": 160.63000000000002,
+        "nasDelayMinutes": 7393
       }
     },
     {
@@ -3393,6 +4284,13 @@
           "intlSeats": 386,
           "freightLbs": 23206433
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7606,
+        "arrDel15": 1679,
+        "nasDelayed": 390.6000000000001,
+        "nasDelayMinutes": 21569
       }
     },
     {
@@ -3419,6 +4317,13 @@
           "intlSeats": 214,
           "freightLbs": 21234472
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7763,
+        "arrDel15": 1751,
+        "nasDelayed": 289.68000000000006,
+        "nasDelayMinutes": 16919
       }
     },
     {
@@ -3445,6 +4350,13 @@
           "intlSeats": 78,
           "freightLbs": 139
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6387,
+        "arrDel15": 1362,
+        "nasDelayed": 319.79,
+        "nasDelayMinutes": 13193
       }
     },
     {
@@ -3471,6 +4383,13 @@
           "intlSeats": 46832,
           "freightLbs": 6925817
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6554,
+        "arrDel15": 1406,
+        "nasDelayed": 205.18000000000006,
+        "nasDelayMinutes": 11462
       }
     },
     {
@@ -3497,6 +4416,13 @@
           "intlSeats": 227,
           "freightLbs": 13307464
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5583,
+        "arrDel15": 1041,
+        "nasDelayed": 321.86,
+        "nasDelayMinutes": 9537
       }
     },
     {
@@ -3523,6 +4449,13 @@
           "intlSeats": 164,
           "freightLbs": 2118991
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5716,
+        "arrDel15": 995,
+        "nasDelayed": 222.09000000000006,
+        "nasDelayMinutes": 8139
       }
     },
     {
@@ -3549,6 +4482,13 @@
           "intlSeats": 357,
           "freightLbs": 8127557
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 8024,
+        "arrDel15": 2061,
+        "nasDelayed": 371.85999999999996,
+        "nasDelayMinutes": 23808
       }
     },
     {
@@ -3575,6 +4515,13 @@
           "intlSeats": 0,
           "freightLbs": 2799451
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7628,
+        "arrDel15": 1189,
+        "nasDelayed": 241.34999999999997,
+        "nasDelayMinutes": 8922
       }
     },
     {
@@ -3601,6 +4548,13 @@
           "intlSeats": 14,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2978,
+        "arrDel15": 828,
+        "nasDelayed": 133.12,
+        "nasDelayMinutes": 9942
       }
     },
     {
@@ -3627,6 +4581,13 @@
           "intlSeats": 76,
           "freightLbs": 1656347
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7100,
+        "arrDel15": 1205,
+        "nasDelayed": 225.64999999999995,
+        "nasDelayMinutes": 9527
       }
     },
     {
@@ -3653,6 +4614,13 @@
           "intlSeats": 10,
           "freightLbs": 1567435
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5826,
+        "arrDel15": 1053,
+        "nasDelayed": 255.12000000000003,
+        "nasDelayMinutes": 11082
       }
     },
     {
@@ -3679,6 +4647,13 @@
           "intlSeats": 0,
           "freightLbs": 16174509
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6096,
+        "arrDel15": 1160,
+        "nasDelayed": 231.04,
+        "nasDelayMinutes": 9021
       }
     },
     {
@@ -3705,6 +4680,13 @@
           "intlSeats": 6,
           "freightLbs": 17010772
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7601,
+        "arrDel15": 1904,
+        "nasDelayed": 427.95000000000005,
+        "nasDelayMinutes": 23434
       }
     },
     {
@@ -3731,6 +4713,13 @@
           "intlSeats": 0,
           "freightLbs": 154352823
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4874,
+        "arrDel15": 1098,
+        "nasDelayed": 222.77000000000007,
+        "nasDelayMinutes": 12089
       }
     },
     {
@@ -3757,6 +4746,13 @@
           "intlSeats": 256,
           "freightLbs": 56363
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4235,
+        "arrDel15": 1164,
+        "nasDelayed": 216.51999999999998,
+        "nasDelayMinutes": 12886
       }
     },
     {
@@ -3783,6 +4779,13 @@
           "intlSeats": 14,
           "freightLbs": 33462
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6524,
+        "arrDel15": 1677,
+        "nasDelayed": 354.81,
+        "nasDelayMinutes": 17913
       }
     },
     {
@@ -3809,6 +4812,13 @@
           "intlSeats": 272,
           "freightLbs": 1451786
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6265,
+        "arrDel15": 1340,
+        "nasDelayed": 343.0000000000001,
+        "nasDelayMinutes": 17723
       }
     },
     {
@@ -3835,6 +4845,13 @@
           "intlSeats": 341,
           "freightLbs": 6895
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4614,
+        "arrDel15": 848,
+        "nasDelayed": 149.51000000000002,
+        "nasDelayMinutes": 6804
       }
     },
     {
@@ -3861,6 +4878,13 @@
           "intlSeats": 0,
           "freightLbs": 8728428
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6562,
+        "arrDel15": 1351,
+        "nasDelayed": 279.67,
+        "nasDelayMinutes": 12320
       }
     },
     {
@@ -3887,6 +4911,13 @@
           "intlSeats": 13,
           "freightLbs": 15817927
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4703,
+        "arrDel15": 805,
+        "nasDelayed": 192.03,
+        "nasDelayMinutes": 6085
       }
     },
     {
@@ -3913,6 +4944,13 @@
           "intlSeats": 1091,
           "freightLbs": 2206637
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5703,
+        "arrDel15": 1219,
+        "nasDelayed": 284.47,
+        "nasDelayMinutes": 13899
       }
     },
     {
@@ -3939,6 +4977,13 @@
           "intlSeats": 11,
           "freightLbs": 8165
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7016,
+        "arrDel15": 1574,
+        "nasDelayed": 280.7400000000001,
+        "nasDelayMinutes": 13153
       }
     },
     {
@@ -3965,6 +5010,13 @@
           "intlSeats": 108,
           "freightLbs": 11630467
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7779,
+        "arrDel15": 1966,
+        "nasDelayed": 511.41000000000014,
+        "nasDelayMinutes": 26201
       }
     },
     {
@@ -3991,6 +5043,13 @@
           "intlSeats": 87,
           "freightLbs": 66939
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6021,
+        "arrDel15": 1200,
+        "nasDelayed": 242.32000000000005,
+        "nasDelayMinutes": 12674
       }
     },
     {
@@ -4017,6 +5076,13 @@
           "intlSeats": 0,
           "freightLbs": 11977281
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5790,
+        "arrDel15": 1449,
+        "nasDelayed": 360.4400000000001,
+        "nasDelayMinutes": 17955
       }
     },
     {
@@ -4043,6 +5109,13 @@
           "intlSeats": 2165,
           "freightLbs": 12529
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2675,
+        "arrDel15": 505,
+        "nasDelayed": 212.5,
+        "nasDelayMinutes": 13885
       }
     },
     {
@@ -4069,6 +5142,13 @@
           "intlSeats": 0,
           "freightLbs": 397101
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5671,
+        "arrDel15": 1187,
+        "nasDelayed": 271.09999999999997,
+        "nasDelayMinutes": 18870
       }
     },
     {
@@ -4095,6 +5175,13 @@
           "intlSeats": 13,
           "freightLbs": 17630155
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6974,
+        "arrDel15": 1675,
+        "nasDelayed": 300.46,
+        "nasDelayMinutes": 18316
       }
     },
     {
@@ -4121,6 +5208,13 @@
           "intlSeats": 0,
           "freightLbs": 1876
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5415,
+        "arrDel15": 1114,
+        "nasDelayed": 247.0799999999999,
+        "nasDelayMinutes": 12472
       }
     },
     {
@@ -4147,6 +5241,13 @@
           "intlSeats": 152,
           "freightLbs": 106437
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5891,
+        "arrDel15": 1142,
+        "nasDelayed": 199.17000000000007,
+        "nasDelayMinutes": 10289
       }
     },
     {
@@ -4173,6 +5274,13 @@
           "intlSeats": 54,
           "freightLbs": 38
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3054,
+        "arrDel15": 601,
+        "nasDelayed": 112.24000000000001,
+        "nasDelayMinutes": 6351
       }
     },
     {
@@ -4199,6 +5307,13 @@
           "intlSeats": 97,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7684,
+        "arrDel15": 2197,
+        "nasDelayed": 667.2600000000001,
+        "nasDelayMinutes": 62118
       }
     },
     {
@@ -4225,6 +5340,13 @@
           "intlSeats": 40,
           "freightLbs": 164365
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5841,
+        "arrDel15": 1422,
+        "nasDelayed": 275.66999999999996,
+        "nasDelayMinutes": 15224
       }
     },
     {
@@ -4251,6 +5373,13 @@
           "intlSeats": 26,
           "freightLbs": 5964
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 7136,
+        "arrDel15": 1491,
+        "nasDelayed": 316.03999999999985,
+        "nasDelayMinutes": 16840
       }
     },
     {
@@ -4277,6 +5406,13 @@
           "intlSeats": 12,
           "freightLbs": 3070400
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5006,
+        "arrDel15": 1028,
+        "nasDelayed": 182.26999999999998,
+        "nasDelayMinutes": 10249
       }
     },
     {
@@ -4303,6 +5439,13 @@
           "intlSeats": 0,
           "freightLbs": 12711500
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3629,
+        "arrDel15": 991,
+        "nasDelayed": 192.94,
+        "nasDelayMinutes": 12791
       }
     },
     {
@@ -4329,6 +5472,13 @@
           "intlSeats": 96,
           "freightLbs": 21943
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5716,
+        "arrDel15": 1402,
+        "nasDelayed": 324.57,
+        "nasDelayMinutes": 16484
       }
     },
     {
@@ -4355,6 +5505,13 @@
           "intlSeats": 0,
           "freightLbs": 2765
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 6216,
+        "arrDel15": 1309,
+        "nasDelayed": 283.01,
+        "nasDelayMinutes": 11947
       }
     },
     {
@@ -4381,6 +5538,13 @@
           "intlSeats": 16,
           "freightLbs": 3576717
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4696,
+        "arrDel15": 898,
+        "nasDelayed": 189.75999999999996,
+        "nasDelayMinutes": 9442
       }
     },
     {
@@ -4407,6 +5571,13 @@
           "intlSeats": 266,
           "freightLbs": 6548
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5447,
+        "arrDel15": 1212,
+        "nasDelayed": 269.27,
+        "nasDelayMinutes": 13761
       }
     },
     {
@@ -4433,6 +5604,13 @@
           "intlSeats": 61,
           "freightLbs": 197885
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5168,
+        "arrDel15": 983,
+        "nasDelayed": 230.85999999999999,
+        "nasDelayMinutes": 14399
       }
     },
     {
@@ -4459,6 +5637,13 @@
           "intlSeats": 0,
           "freightLbs": 250
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3868,
+        "arrDel15": 1119,
+        "nasDelayed": 377.47999999999996,
+        "nasDelayMinutes": 18344
       }
     },
     {
@@ -4485,6 +5670,13 @@
           "intlSeats": 65622,
           "freightLbs": 3749
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2942,
+        "arrDel15": 597,
+        "nasDelayed": 130.93,
+        "nasDelayMinutes": 5399
       }
     },
     {
@@ -4511,6 +5703,13 @@
           "intlSeats": 0,
           "freightLbs": 347717
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4675,
+        "arrDel15": 995,
+        "nasDelayed": 229.23000000000002,
+        "nasDelayMinutes": 14808
       }
     },
     {
@@ -4537,6 +5736,13 @@
           "intlSeats": 570,
           "freightLbs": 5621485
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3510,
+        "arrDel15": 781,
+        "nasDelayed": 162.31,
+        "nasDelayMinutes": 5453
       }
     },
     {
@@ -4563,6 +5769,13 @@
           "intlSeats": 189,
           "freightLbs": 9658922
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 5527,
+        "arrDel15": 1228,
+        "nasDelayed": 230.1,
+        "nasDelayMinutes": 11408
       }
     },
     {
@@ -4589,6 +5802,13 @@
           "intlSeats": 0,
           "freightLbs": 60764
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4227,
+        "arrDel15": 722,
+        "nasDelayed": 135.74,
+        "nasDelayMinutes": 6655
       }
     },
     {
@@ -4615,6 +5835,13 @@
           "intlSeats": 0,
           "freightLbs": 253912
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4283,
+        "arrDel15": 920,
+        "nasDelayed": 146.33,
+        "nasDelayMinutes": 7896
       }
     },
     {
@@ -4641,6 +5868,13 @@
           "intlSeats": 121846,
           "freightLbs": 1014594
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2139,
+        "arrDel15": 415,
+        "nasDelayed": 68.78,
+        "nasDelayMinutes": 3950
       }
     },
     {
@@ -4667,6 +5901,13 @@
           "intlSeats": 0,
           "freightLbs": 6463
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2580,
+        "arrDel15": 569,
+        "nasDelayed": 120.74,
+        "nasDelayMinutes": 4937
       }
     },
     {
@@ -4693,6 +5934,13 @@
           "intlSeats": 37,
           "freightLbs": 10219
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4499,
+        "arrDel15": 900,
+        "nasDelayed": 180.18,
+        "nasDelayMinutes": 10114
       }
     },
     {
@@ -4719,6 +5967,13 @@
           "intlSeats": 14,
           "freightLbs": 127883
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2415,
+        "arrDel15": 600,
+        "nasDelayed": 198.26000000000008,
+        "nasDelayMinutes": 11278
       }
     },
     {
@@ -4745,6 +6000,13 @@
           "intlSeats": 0,
           "freightLbs": 5144528
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2386,
+        "arrDel15": 483,
+        "nasDelayed": 142.1,
+        "nasDelayMinutes": 4821
       }
     },
     {
@@ -4771,6 +6033,13 @@
           "intlSeats": 157,
           "freightLbs": 99488
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4072,
+        "arrDel15": 803,
+        "nasDelayed": 174.45999999999992,
+        "nasDelayMinutes": 8905
       }
     },
     {
@@ -4797,6 +6066,13 @@
           "intlSeats": 213,
           "freightLbs": 793825
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2437,
+        "arrDel15": 394,
+        "nasDelayed": 85.61,
+        "nasDelayMinutes": 3412
       }
     },
     {
@@ -4823,6 +6099,13 @@
           "intlSeats": 32,
           "freightLbs": 2238
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3239,
+        "arrDel15": 752,
+        "nasDelayed": 167.74,
+        "nasDelayMinutes": 8243
       }
     },
     {
@@ -4849,6 +6132,13 @@
           "intlSeats": 0,
           "freightLbs": 1223
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3782,
+        "arrDel15": 1030,
+        "nasDelayed": 157.54,
+        "nasDelayMinutes": 8930
       }
     },
     {
@@ -4875,6 +6165,13 @@
           "intlSeats": 0,
           "freightLbs": 307417
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 4540,
+        "arrDel15": 700,
+        "nasDelayed": 104.4,
+        "nasDelayMinutes": 6448
       }
     },
     {
@@ -4901,6 +6198,13 @@
           "intlSeats": 0,
           "freightLbs": 754972
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3053,
+        "arrDel15": 747,
+        "nasDelayed": 129.56,
+        "nasDelayMinutes": 7048
       }
     },
     {
@@ -4927,6 +6231,13 @@
           "intlSeats": 0,
           "freightLbs": 1971
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3858,
+        "arrDel15": 923,
+        "nasDelayed": 173.61,
+        "nasDelayMinutes": 9043
       }
     },
     {
@@ -4953,6 +6264,13 @@
           "intlSeats": 42,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3681,
+        "arrDel15": 835,
+        "nasDelayed": 140.29,
+        "nasDelayMinutes": 10590
       }
     },
     {
@@ -4979,6 +6297,13 @@
           "intlSeats": 824,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 711,
+        "arrDel15": 290,
+        "nasDelayed": 62.56,
+        "nasDelayMinutes": 2996
       }
     },
     {
@@ -5005,6 +6330,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1360,
+        "arrDel15": 306,
+        "nasDelayed": 79.85,
+        "nasDelayMinutes": 3827
       }
     },
     {
@@ -5031,6 +6363,13 @@
           "intlSeats": 186,
           "freightLbs": 19523629
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2628,
+        "arrDel15": 369,
+        "nasDelayed": 59.910000000000004,
+        "nasDelayMinutes": 2664
       }
     },
     {
@@ -5057,6 +6396,13 @@
           "intlSeats": 589,
           "freightLbs": 310665
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2906,
+        "arrDel15": 559,
+        "nasDelayed": 124.58999999999999,
+        "nasDelayMinutes": 7592
       }
     },
     {
@@ -5083,6 +6429,13 @@
           "intlSeats": 269,
           "freightLbs": 34655511
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1169,
+        "arrDel15": 287,
+        "nasDelayed": 65.36,
+        "nasDelayMinutes": 3559
       }
     },
     {
@@ -5109,6 +6462,13 @@
           "intlSeats": 0,
           "freightLbs": 7221944
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 878,
+        "arrDel15": 136,
+        "nasDelayed": 25.270000000000003,
+        "nasDelayMinutes": 766
       }
     },
     {
@@ -5161,6 +6521,13 @@
           "intlSeats": 0,
           "freightLbs": 474
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3588,
+        "arrDel15": 640,
+        "nasDelayed": 101.95000000000002,
+        "nasDelayMinutes": 4844
       }
     },
     {
@@ -5187,6 +6554,13 @@
           "intlSeats": 124,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1091,
+        "arrDel15": 300,
+        "nasDelayed": 47.46,
+        "nasDelayMinutes": 2687
       }
     },
     {
@@ -5213,6 +6587,13 @@
           "intlSeats": 0,
           "freightLbs": 5068950
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2526,
+        "arrDel15": 522,
+        "nasDelayed": 114.54000000000002,
+        "nasDelayMinutes": 6228
       }
     },
     {
@@ -5239,6 +6620,13 @@
           "intlSeats": 0,
           "freightLbs": 435
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3256,
+        "arrDel15": 618,
+        "nasDelayed": 102.72999999999999,
+        "nasDelayMinutes": 4869
       }
     },
     {
@@ -5265,6 +6653,13 @@
           "intlSeats": 201,
           "freightLbs": 502600293
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 935,
+        "arrDel15": 150,
+        "nasDelayed": 33.8,
+        "nasDelayMinutes": 1385
       }
     },
     {
@@ -5291,6 +6686,13 @@
           "intlSeats": 6,
           "freightLbs": 1040434
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3500,
+        "arrDel15": 780,
+        "nasDelayed": 186.62,
+        "nasDelayMinutes": 9735
       }
     },
     {
@@ -5317,6 +6719,13 @@
           "intlSeats": 181,
           "freightLbs": 121074
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1761,
+        "arrDel15": 298,
+        "nasDelayed": 81.08,
+        "nasDelayMinutes": 3687
       }
     },
     {
@@ -5343,6 +6752,13 @@
           "intlSeats": 27358,
           "freightLbs": 13623833
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 611,
+        "arrDel15": 102,
+        "nasDelayed": 24.43,
+        "nasDelayMinutes": 1252
       }
     },
     {
@@ -5369,6 +6785,13 @@
           "intlSeats": 54,
           "freightLbs": 3018
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2866,
+        "arrDel15": 334,
+        "nasDelayed": 70.63,
+        "nasDelayMinutes": 4820
       }
     },
     {
@@ -5395,6 +6818,13 @@
           "intlSeats": 58,
           "freightLbs": 608016
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2498,
+        "arrDel15": 578,
+        "nasDelayed": 95.84,
+        "nasDelayMinutes": 7833
       }
     },
     {
@@ -5421,6 +6851,13 @@
           "intlSeats": 5291,
           "freightLbs": 24019050
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3052,
+        "arrDel15": 564,
+        "nasDelayed": 116.07,
+        "nasDelayMinutes": 4651
       }
     },
     {
@@ -5447,6 +6884,13 @@
           "intlSeats": 692,
           "freightLbs": 114318
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3137,
+        "arrDel15": 574,
+        "nasDelayed": 101.23,
+        "nasDelayMinutes": 4405
       }
     },
     {
@@ -5473,6 +6917,13 @@
           "intlSeats": 40,
           "freightLbs": 13365
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 3014,
+        "arrDel15": 848,
+        "nasDelayed": 202.74999999999997,
+        "nasDelayMinutes": 17633
       }
     },
     {
@@ -5499,6 +6950,13 @@
           "intlSeats": 0,
           "freightLbs": 359950
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1985,
+        "arrDel15": 330,
+        "nasDelayed": 84.34999999999998,
+        "nasDelayMinutes": 6433
       }
     },
     {
@@ -5525,6 +6983,13 @@
           "intlSeats": 218,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 42,
+        "arrDel15": 21,
+        "nasDelayed": 10.69,
+        "nasDelayMinutes": 728
       }
     },
     {
@@ -5551,6 +7016,13 @@
           "intlSeats": 0,
           "freightLbs": 6290718
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1329,
+        "arrDel15": 302,
+        "nasDelayed": 56.39000000000001,
+        "nasDelayMinutes": 1969
       }
     },
     {
@@ -5577,6 +7049,13 @@
           "intlSeats": 239,
           "freightLbs": 11206
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2497,
+        "arrDel15": 623,
+        "nasDelayed": 157.76000000000008,
+        "nasDelayMinutes": 9115
       }
     },
     {
@@ -5603,6 +7082,13 @@
           "intlSeats": 6,
           "freightLbs": 575
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2185,
+        "arrDel15": 353,
+        "nasDelayed": 133.5,
+        "nasDelayMinutes": 5539
       }
     },
     {
@@ -5629,6 +7115,13 @@
           "intlSeats": 432,
           "freightLbs": 20379070
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2188,
+        "arrDel15": 545,
+        "nasDelayed": 101.62,
+        "nasDelayMinutes": 5434
       }
     },
     {
@@ -5655,6 +7148,13 @@
           "intlSeats": 0,
           "freightLbs": 10862
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2148,
+        "arrDel15": 467,
+        "nasDelayed": 87.57,
+        "nasDelayMinutes": 5258
       }
     },
     {
@@ -5681,6 +7181,13 @@
           "intlSeats": 0,
           "freightLbs": 10100
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2341,
+        "arrDel15": 565,
+        "nasDelayed": 75.5,
+        "nasDelayMinutes": 5770
       }
     },
     {
@@ -5707,6 +7214,13 @@
           "intlSeats": 0,
           "freightLbs": 3330128
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1561,
+        "arrDel15": 324,
+        "nasDelayed": 59.650000000000006,
+        "nasDelayMinutes": 2590
       }
     },
     {
@@ -5733,6 +7247,13 @@
           "intlSeats": 772,
           "freightLbs": 455767
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1762,
+        "arrDel15": 400,
+        "nasDelayed": 88.3,
+        "nasDelayMinutes": 3790
       }
     },
     {
@@ -5759,6 +7280,13 @@
           "intlSeats": 230,
           "freightLbs": 7447969
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2188,
+        "arrDel15": 624,
+        "nasDelayed": 118.72999999999999,
+        "nasDelayMinutes": 6238
       }
     },
     {
@@ -5785,6 +7313,13 @@
           "intlSeats": 0,
           "freightLbs": 3930558
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 547,
+        "arrDel15": 73,
+        "nasDelayed": 9.86,
+        "nasDelayMinutes": 383
       }
     },
     {
@@ -5811,6 +7346,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1250,
+        "arrDel15": 248,
+        "nasDelayed": 38.8,
+        "nasDelayMinutes": 1903
       }
     },
     {
@@ -5837,6 +7379,13 @@
           "intlSeats": 28,
           "freightLbs": 24852
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1443,
+        "arrDel15": 235,
+        "nasDelayed": 71.38000000000001,
+        "nasDelayMinutes": 2878
       }
     },
     {
@@ -5863,6 +7412,13 @@
           "intlSeats": 50,
           "freightLbs": 231636
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2376,
+        "arrDel15": 539,
+        "nasDelayed": 106.91000000000001,
+        "nasDelayMinutes": 5797
       }
     },
     {
@@ -5889,6 +7445,13 @@
           "intlSeats": 44,
           "freightLbs": 12969091
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 2399,
+        "arrDel15": 601,
+        "nasDelayed": 155.73,
+        "nasDelayMinutes": 11008
       }
     },
     {
@@ -5915,6 +7478,13 @@
           "intlSeats": 0,
           "freightLbs": 5666
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1973,
+        "arrDel15": 322,
+        "nasDelayed": 69.17,
+        "nasDelayMinutes": 4815
       }
     },
     {
@@ -5941,6 +7511,13 @@
           "intlSeats": 14,
           "freightLbs": 5886
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1293,
+        "arrDel15": 203,
+        "nasDelayed": 37,
+        "nasDelayMinutes": 1876
       }
     },
     {
@@ -5967,6 +7544,13 @@
           "intlSeats": 0,
           "freightLbs": 1502330
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1812,
+        "arrDel15": 327,
+        "nasDelayed": 50.050000000000004,
+        "nasDelayMinutes": 2288
       }
     },
     {
@@ -5993,6 +7577,13 @@
           "intlSeats": 0,
           "freightLbs": 3702
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1985,
+        "arrDel15": 383,
+        "nasDelayed": 54.169999999999995,
+        "nasDelayMinutes": 3391
       }
     },
     {
@@ -6045,6 +7636,13 @@
           "intlSeats": 290,
           "freightLbs": 1356
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1811,
+        "arrDel15": 412,
+        "nasDelayed": 76.55,
+        "nasDelayMinutes": 3478
       }
     },
     {
@@ -6097,6 +7695,13 @@
           "intlSeats": 0,
           "freightLbs": 890
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1986,
+        "arrDel15": 420,
+        "nasDelayed": 61.720000000000006,
+        "nasDelayMinutes": 3154
       }
     },
     {
@@ -6123,6 +7728,13 @@
           "intlSeats": 0,
           "freightLbs": 19535
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1711,
+        "arrDel15": 402,
+        "nasDelayed": 102.62,
+        "nasDelayMinutes": 4468
       }
     },
     {
@@ -6149,6 +7761,13 @@
           "intlSeats": 94,
           "freightLbs": 58596
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1070,
+        "arrDel15": 151,
+        "nasDelayed": 49.230000000000004,
+        "nasDelayMinutes": 2119
       }
     },
     {
@@ -6175,6 +7794,13 @@
           "intlSeats": 0,
           "freightLbs": 14424
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1676,
+        "arrDel15": 383,
+        "nasDelayed": 74.97999999999999,
+        "nasDelayMinutes": 3700
       }
     },
     {
@@ -6201,6 +7827,13 @@
           "intlSeats": 0,
           "freightLbs": 955789
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1772,
+        "arrDel15": 333,
+        "nasDelayed": 84.77999999999997,
+        "nasDelayMinutes": 7850
       }
     },
     {
@@ -6227,6 +7860,13 @@
           "intlSeats": 0,
           "freightLbs": 32426
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1738,
+        "arrDel15": 437,
+        "nasDelayed": 91.46000000000002,
+        "nasDelayMinutes": 4321
       }
     },
     {
@@ -6253,6 +7893,13 @@
           "intlSeats": 0,
           "freightLbs": 2400
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 536,
+        "arrDel15": 77,
+        "nasDelayed": 33.27,
+        "nasDelayMinutes": 1564
       }
     },
     {
@@ -6279,6 +7926,13 @@
           "intlSeats": 265,
           "freightLbs": 5668453
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 506,
+        "arrDel15": 69,
+        "nasDelayed": 22.750000000000004,
+        "nasDelayMinutes": 900
       }
     },
     {
@@ -6305,6 +7959,13 @@
           "intlSeats": 0,
           "freightLbs": 3087311
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 864,
+        "arrDel15": 122,
+        "nasDelayed": 20.910000000000004,
+        "nasDelayMinutes": 901
       }
     },
     {
@@ -6331,6 +7992,13 @@
           "intlSeats": 2179,
           "freightLbs": 175
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1683,
+        "arrDel15": 286,
+        "nasDelayed": 33.01,
+        "nasDelayMinutes": 1523
       }
     },
     {
@@ -6357,6 +8025,13 @@
           "intlSeats": 14,
           "freightLbs": 395842
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1728,
+        "arrDel15": 365,
+        "nasDelayed": 37.88,
+        "nasDelayMinutes": 2097
       }
     },
     {
@@ -6383,6 +8058,13 @@
           "intlSeats": 186,
           "freightLbs": 300734
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 989,
+        "arrDel15": 175,
+        "nasDelayed": 13.71,
+        "nasDelayMinutes": 840
       }
     },
     {
@@ -6435,6 +8117,13 @@
           "intlSeats": 0,
           "freightLbs": 9641
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1199,
+        "arrDel15": 239,
+        "nasDelayed": 45.61,
+        "nasDelayMinutes": 1265
       }
     },
     {
@@ -6461,6 +8150,13 @@
           "intlSeats": 564,
           "freightLbs": 1232
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1743,
+        "arrDel15": 302,
+        "nasDelayed": 55.37,
+        "nasDelayMinutes": 1930
       }
     },
     {
@@ -6487,6 +8183,13 @@
           "intlSeats": 0,
           "freightLbs": 4039174
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 722,
+        "arrDel15": 109,
+        "nasDelayed": 14.07,
+        "nasDelayMinutes": 425
       }
     },
     {
@@ -6513,6 +8216,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1244,
+        "arrDel15": 246,
+        "nasDelayed": 69.43999999999998,
+        "nasDelayMinutes": 6011
       }
     },
     {
@@ -6539,6 +8249,13 @@
           "intlSeats": 0,
           "freightLbs": 16789
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1221,
+        "arrDel15": 210,
+        "nasDelayed": 36.35,
+        "nasDelayMinutes": 1613
       }
     },
     {
@@ -6565,6 +8282,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1472,
+        "arrDel15": 346,
+        "nasDelayed": 80.84000000000002,
+        "nasDelayMinutes": 3427
       }
     },
     {
@@ -6591,6 +8315,13 @@
           "intlSeats": 63,
           "freightLbs": 42
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 641,
+        "arrDel15": 84,
+        "nasDelayed": 12.030000000000001,
+        "nasDelayMinutes": 404
       }
     },
     {
@@ -6617,6 +8348,13 @@
           "intlSeats": 0,
           "freightLbs": 93984
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 473,
+        "arrDel15": 87,
+        "nasDelayed": 22.39,
+        "nasDelayMinutes": 1355
       }
     },
     {
@@ -6643,6 +8381,13 @@
           "intlSeats": 207,
           "freightLbs": 20304233
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 396,
+        "arrDel15": 122,
+        "nasDelayed": 23.89,
+        "nasDelayMinutes": 1385
       }
     },
     {
@@ -6669,6 +8414,13 @@
           "intlSeats": 32,
           "freightLbs": 34729
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1846,
+        "arrDel15": 424,
+        "nasDelayed": 78.48,
+        "nasDelayMinutes": 3385
       }
     },
     {
@@ -6695,6 +8447,13 @@
           "intlSeats": 0,
           "freightLbs": 45417454
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 564,
+        "arrDel15": 106,
+        "nasDelayed": 21.77,
+        "nasDelayMinutes": 1059
       }
     },
     {
@@ -6721,6 +8480,13 @@
           "intlSeats": 0,
           "freightLbs": 2552
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1060,
+        "arrDel15": 165,
+        "nasDelayed": 31.2,
+        "nasDelayMinutes": 1080
       }
     },
     {
@@ -6799,6 +8565,13 @@
           "intlSeats": 0,
           "freightLbs": 3396
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 492,
+        "arrDel15": 101,
+        "nasDelayed": 41.54,
+        "nasDelayMinutes": 1750
       }
     },
     {
@@ -6825,6 +8598,13 @@
           "intlSeats": 0,
           "freightLbs": 16745
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1169,
+        "arrDel15": 196,
+        "nasDelayed": 37.21,
+        "nasDelayMinutes": 1668
       }
     },
     {
@@ -6851,6 +8631,13 @@
           "intlSeats": 0,
           "freightLbs": 12672
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 973,
+        "arrDel15": 187,
+        "nasDelayed": 25.190000000000005,
+        "nasDelayMinutes": 1399
       }
     },
     {
@@ -6877,6 +8664,13 @@
           "intlSeats": 0,
           "freightLbs": 55117
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1500,
+        "arrDel15": 184,
+        "nasDelayed": 31.399999999999995,
+        "nasDelayMinutes": 1584
       }
     },
     {
@@ -6903,6 +8697,13 @@
           "intlSeats": 0,
           "freightLbs": 3836351
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 717,
+        "arrDel15": 92,
+        "nasDelayed": 10.93,
+        "nasDelayMinutes": 357
       }
     },
     {
@@ -6929,6 +8730,13 @@
           "intlSeats": 0,
           "freightLbs": 10467
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1090,
+        "arrDel15": 255,
+        "nasDelayed": 31.240000000000006,
+        "nasDelayMinutes": 1597
       }
     },
     {
@@ -6955,6 +8763,13 @@
           "intlSeats": 0,
           "freightLbs": 161630
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1354,
+        "arrDel15": 280,
+        "nasDelayed": 46.410000000000004,
+        "nasDelayMinutes": 2756
       }
     },
     {
@@ -6981,6 +8796,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1020,
+        "arrDel15": 243,
+        "nasDelayed": 43.019999999999996,
+        "nasDelayMinutes": 1954
       }
     },
     {
@@ -7007,6 +8829,13 @@
           "intlSeats": 14,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1061,
+        "arrDel15": 226,
+        "nasDelayed": 32.39,
+        "nasDelayMinutes": 2065
       }
     },
     {
@@ -7033,6 +8862,13 @@
           "intlSeats": 0,
           "freightLbs": 1906910
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 724,
+        "arrDel15": 113,
+        "nasDelayed": 21.54,
+        "nasDelayMinutes": 765
       }
     },
     {
@@ -7059,6 +8895,13 @@
           "intlSeats": 0,
           "freightLbs": 57
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1089,
+        "arrDel15": 246,
+        "nasDelayed": 26.85,
+        "nasDelayMinutes": 1489
       }
     },
     {
@@ -7085,6 +8928,13 @@
           "intlSeats": 0,
           "freightLbs": 1847791
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 724,
+        "arrDel15": 126,
+        "nasDelayed": 22.08,
+        "nasDelayMinutes": 652
       }
     },
     {
@@ -7111,6 +8961,13 @@
           "intlSeats": 0,
           "freightLbs": 552536
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1021,
+        "arrDel15": 213,
+        "nasDelayed": 35.27,
+        "nasDelayMinutes": 1802
       }
     },
     {
@@ -7137,6 +8994,13 @@
           "intlSeats": 0,
           "freightLbs": 420594
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1089,
+        "arrDel15": 238,
+        "nasDelayed": 29.019999999999996,
+        "nasDelayMinutes": 1695
       }
     },
     {
@@ -7189,6 +9053,13 @@
           "intlSeats": 31,
           "freightLbs": 275
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 796,
+        "arrDel15": 181,
+        "nasDelayed": 32.13999999999999,
+        "nasDelayMinutes": 1675
       }
     },
     {
@@ -7215,6 +9086,13 @@
           "intlSeats": 9,
           "freightLbs": 1686560
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 100,
+        "nasDelayed": 18.33,
+        "nasDelayMinutes": 570
       }
     },
     {
@@ -7241,6 +9119,13 @@
           "intlSeats": 0,
           "freightLbs": 17796
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 948,
+        "arrDel15": 204,
+        "nasDelayed": 25.049999999999997,
+        "nasDelayMinutes": 1542
       }
     },
     {
@@ -7267,6 +9152,13 @@
           "intlSeats": 0,
           "freightLbs": 52800
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 315,
+        "arrDel15": 134,
+        "nasDelayed": 24.03,
+        "nasDelayMinutes": 1715
       }
     },
     {
@@ -7293,6 +9185,13 @@
           "intlSeats": 0,
           "freightLbs": 3318
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1027,
+        "arrDel15": 247,
+        "nasDelayed": 59.52,
+        "nasDelayMinutes": 2518
       }
     },
     {
@@ -7319,6 +9218,13 @@
           "intlSeats": 354,
           "freightLbs": 337218
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 697,
+        "arrDel15": 170,
+        "nasDelayed": 28.6,
+        "nasDelayMinutes": 1203
       }
     },
     {
@@ -7345,6 +9251,13 @@
           "intlSeats": 0,
           "freightLbs": 2713265
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 411,
+        "arrDel15": 104,
+        "nasDelayed": 10.04,
+        "nasDelayMinutes": 394
       }
     },
     {
@@ -7371,6 +9284,13 @@
           "intlSeats": 0,
           "freightLbs": 86457
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 665,
+        "arrDel15": 109,
+        "nasDelayed": 18.299999999999997,
+        "nasDelayMinutes": 625
       }
     },
     {
@@ -7423,6 +9343,13 @@
           "intlSeats": 194,
           "freightLbs": 8100
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1062,
+        "arrDel15": 141,
+        "nasDelayed": 22.16,
+        "nasDelayMinutes": 694
       }
     },
     {
@@ -7449,6 +9376,13 @@
           "intlSeats": 0,
           "freightLbs": 4627
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 205,
+        "arrDel15": 81,
+        "nasDelayed": 18.97,
+        "nasDelayMinutes": 794
       }
     },
     {
@@ -7475,6 +9409,13 @@
           "intlSeats": 0,
           "freightLbs": 1402
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1088,
+        "arrDel15": 297,
+        "nasDelayed": 44.56999999999999,
+        "nasDelayMinutes": 2726
       }
     },
     {
@@ -7501,6 +9442,13 @@
           "intlSeats": 0,
           "freightLbs": 2079
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 111,
+        "nasDelayed": 18.5,
+        "nasDelayMinutes": 583
       }
     },
     {
@@ -7527,6 +9475,13 @@
           "intlSeats": 0,
           "freightLbs": 10971893
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 1021,
+        "arrDel15": 242,
+        "nasDelayed": 20.53,
+        "nasDelayMinutes": 2011
       }
     },
     {
@@ -7553,6 +9508,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 327,
+        "arrDel15": 52,
+        "nasDelayed": 11.61,
+        "nasDelayMinutes": 452
       }
     },
     {
@@ -7579,6 +9541,13 @@
           "intlSeats": 0,
           "freightLbs": 6993069
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 473,
+        "arrDel15": 64,
+        "nasDelayed": 9.35,
+        "nasDelayMinutes": 287
       }
     },
     {
@@ -7605,6 +9574,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 760,
+        "arrDel15": 61,
+        "nasDelayed": 4.5,
+        "nasDelayMinutes": 152
       }
     },
     {
@@ -7631,6 +9607,13 @@
           "intlSeats": 0,
           "freightLbs": 213132
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 170,
+        "nasDelayed": 31.709999999999997,
+        "nasDelayMinutes": 1355
       }
     },
     {
@@ -7657,6 +9640,13 @@
           "intlSeats": 0,
           "freightLbs": 880
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 930,
+        "arrDel15": 225,
+        "nasDelayed": 48.78,
+        "nasDelayMinutes": 3034
       }
     },
     {
@@ -7683,6 +9673,13 @@
           "intlSeats": 0,
           "freightLbs": 912
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 158,
+        "nasDelayed": 22.830000000000005,
+        "nasDelayMinutes": 948
       }
     },
     {
@@ -7709,6 +9706,13 @@
           "intlSeats": 12,
           "freightLbs": 3908
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 716,
+        "arrDel15": 42,
+        "nasDelayed": 3.25,
+        "nasDelayMinutes": 228
       }
     },
     {
@@ -7735,6 +9739,13 @@
           "intlSeats": 0,
           "freightLbs": 77
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 157,
+        "nasDelayed": 28.61,
+        "nasDelayMinutes": 1512
       }
     },
     {
@@ -7761,6 +9772,13 @@
           "intlSeats": 0,
           "freightLbs": 1232
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 150,
+        "nasDelayed": 11.73,
+        "nasDelayMinutes": 1153
       }
     },
     {
@@ -7787,6 +9805,13 @@
           "intlSeats": 0,
           "freightLbs": 2508281
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 430,
+        "arrDel15": 58,
+        "nasDelayed": 11.740000000000002,
+        "nasDelayMinutes": 603
       }
     },
     {
@@ -7813,6 +9838,13 @@
           "intlSeats": 26,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 380,
+        "arrDel15": 52,
+        "nasDelayed": 13.39,
+        "nasDelayMinutes": 538
       }
     },
     {
@@ -7839,6 +9871,13 @@
           "intlSeats": 0,
           "freightLbs": 23100
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 156,
+        "nasDelayed": 13.18,
+        "nasDelayMinutes": 1664
       }
     },
     {
@@ -7865,6 +9904,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 153,
+        "nasDelayed": 13.760000000000002,
+        "nasDelayMinutes": 787
       }
     },
     {
@@ -7891,6 +9937,13 @@
           "intlSeats": 386,
           "freightLbs": 4044
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 971,
+        "arrDel15": 308,
+        "nasDelayed": 73.62999999999998,
+        "nasDelayMinutes": 6857
       }
     },
     {
@@ -7917,6 +9970,13 @@
           "intlSeats": 0,
           "freightLbs": 3004259
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 723,
+        "arrDel15": 88,
+        "nasDelayed": 16.15,
+        "nasDelayMinutes": 554
       }
     },
     {
@@ -7969,6 +10029,13 @@
           "intlSeats": 36,
           "freightLbs": 215777
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 924,
+        "arrDel15": 183,
+        "nasDelayed": 23.28,
+        "nasDelayMinutes": 1511
       }
     },
     {
@@ -7995,6 +10062,13 @@
           "intlSeats": 10,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 736,
+        "arrDel15": 192,
+        "nasDelayed": 37.68000000000001,
+        "nasDelayMinutes": 2536
       }
     },
     {
@@ -8047,6 +10121,13 @@
           "intlSeats": 0,
           "freightLbs": 352622
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 925,
+        "arrDel15": 134,
+        "nasDelayed": 16.6,
+        "nasDelayMinutes": 1077
       }
     },
     {
@@ -8073,6 +10154,13 @@
           "intlSeats": 0,
           "freightLbs": 89974
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 795,
+        "arrDel15": 230,
+        "nasDelayed": 32.68,
+        "nasDelayMinutes": 2307
       }
     },
     {
@@ -8099,6 +10187,13 @@
           "intlSeats": 0,
           "freightLbs": 128506
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 865,
+        "arrDel15": 176,
+        "nasDelayed": 21.04,
+        "nasDelayMinutes": 1825
       }
     },
     {
@@ -8151,6 +10246,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 735,
+        "arrDel15": 158,
+        "nasDelayed": 37.58,
+        "nasDelayMinutes": 2624
       }
     },
     {
@@ -8177,6 +10279,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 730,
+        "arrDel15": 146,
+        "nasDelayed": 38.37,
+        "nasDelayMinutes": 3031
       }
     },
     {
@@ -8203,6 +10312,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 212,
+        "nasDelayed": 47.339999999999996,
+        "nasDelayMinutes": 4179
       }
     },
     {
@@ -8229,6 +10345,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 730,
+        "arrDel15": 240,
+        "nasDelayed": 63.72,
+        "nasDelayMinutes": 6514
       }
     },
     {
@@ -8255,6 +10378,13 @@
           "intlSeats": 42,
           "freightLbs": 2478
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 176,
+        "arrDel15": 20,
+        "nasDelayed": 5.749999999999999,
+        "nasDelayMinutes": 257
       }
     },
     {
@@ -8281,6 +10411,13 @@
           "intlSeats": 0,
           "freightLbs": 236761
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 728,
+        "arrDel15": 102,
+        "nasDelayed": 9.67,
+        "nasDelayMinutes": 624
       }
     },
     {
@@ -8333,6 +10470,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 189,
+        "nasDelayed": 35.459999999999994,
+        "nasDelayMinutes": 2922
       }
     },
     {
@@ -8359,6 +10503,13 @@
           "intlSeats": 0,
           "freightLbs": 155591
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 754,
+        "arrDel15": 74,
+        "nasDelayed": 6.500000000000001,
+        "nasDelayMinutes": 526
       }
     },
     {
@@ -8385,6 +10536,13 @@
           "intlSeats": 14,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 794,
+        "arrDel15": 188,
+        "nasDelayed": 20.35,
+        "nasDelayMinutes": 1780
       }
     },
     {
@@ -8411,6 +10569,13 @@
           "intlSeats": 0,
           "freightLbs": 267405
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 473,
+        "arrDel15": 91,
+        "nasDelayed": 25.959999999999997,
+        "nasDelayMinutes": 1076
       }
     },
     {
@@ -8437,6 +10602,13 @@
           "intlSeats": 0,
           "freightLbs": 142324
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 179,
+        "nasDelayed": 46.66,
+        "nasDelayMinutes": 3111
       }
     },
     {
@@ -8463,6 +10635,13 @@
           "intlSeats": 0,
           "freightLbs": 35323
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 996,
+        "arrDel15": 116,
+        "nasDelayed": 12.969999999999999,
+        "nasDelayMinutes": 468
       }
     },
     {
@@ -8489,6 +10668,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 729,
+        "arrDel15": 145,
+        "nasDelayed": 28.83,
+        "nasDelayMinutes": 1708
       }
     },
     {
@@ -8515,6 +10701,13 @@
           "intlSeats": 0,
           "freightLbs": 5
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 720,
+        "arrDel15": 133,
+        "nasDelayed": 31.43,
+        "nasDelayMinutes": 1640
       }
     },
     {
@@ -8541,6 +10734,13 @@
           "intlSeats": 0,
           "freightLbs": 125858
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 690,
+        "arrDel15": 179,
+        "nasDelayed": 54.31999999999999,
+        "nasDelayMinutes": 5051
       }
     },
     {
@@ -8593,6 +10793,13 @@
           "intlSeats": 0,
           "freightLbs": 377160
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 626,
+        "arrDel15": 129,
+        "nasDelayed": 28.780000000000005,
+        "nasDelayMinutes": 1710
       }
     },
     {
@@ -8619,6 +10826,13 @@
           "intlSeats": 0,
           "freightLbs": 2568359
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 724,
+        "arrDel15": 88,
+        "nasDelayed": 13.209999999999997,
+        "nasDelayMinutes": 385
       }
     },
     {
@@ -8645,6 +10859,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 709,
+        "arrDel15": 118,
+        "nasDelayed": 36.86,
+        "nasDelayMinutes": 3588
       }
     },
     {
@@ -8671,6 +10892,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 726,
+        "arrDel15": 186,
+        "nasDelayed": 27.36,
+        "nasDelayMinutes": 3466
       }
     },
     {
@@ -8723,6 +10951,13 @@
           "intlSeats": 0,
           "freightLbs": 116904
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 365,
+        "arrDel15": 113,
+        "nasDelayed": 9.899999999999999,
+        "nasDelayMinutes": 584
       }
     },
     {
@@ -8749,6 +10984,13 @@
           "intlSeats": 0,
           "freightLbs": 187223
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 626,
+        "arrDel15": 140,
+        "nasDelayed": 23.759999999999998,
+        "nasDelayMinutes": 1976
       }
     },
     {
@@ -8801,6 +11043,13 @@
           "intlSeats": 0,
           "freightLbs": 1750
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 678,
+        "arrDel15": 171,
+        "nasDelayed": 47,
+        "nasDelayMinutes": 2818
       }
     },
     {
@@ -8853,6 +11102,13 @@
           "intlSeats": 0,
           "freightLbs": 246385
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 550,
+        "arrDel15": 37,
+        "nasDelayed": 2.54,
+        "nasDelayMinutes": 118
       }
     },
     {
@@ -8879,6 +11135,13 @@
           "intlSeats": 0,
           "freightLbs": 126100
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 148,
+        "nasDelayed": 12.879999999999999,
+        "nasDelayMinutes": 800
       }
     },
     {
@@ -8983,6 +11246,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 203,
+        "nasDelayed": 26.879999999999995,
+        "nasDelayMinutes": 2536
       }
     },
     {
@@ -9009,6 +11279,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 136,
+        "nasDelayed": 25.42,
+        "nasDelayMinutes": 1520
       }
     },
     {
@@ -9035,6 +11312,13 @@
           "intlSeats": 0,
           "freightLbs": 5760
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 149,
+        "nasDelayed": 14.680000000000001,
+        "nasDelayMinutes": 1353
       }
     },
     {
@@ -9139,6 +11423,13 @@
           "intlSeats": 0,
           "freightLbs": 1014503
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 259,
+        "arrDel15": 41,
+        "nasDelayed": 8.43,
+        "nasDelayMinutes": 866
       }
     },
     {
@@ -9165,6 +11456,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 162,
+        "nasDelayed": 10.8,
+        "nasDelayMinutes": 798
       }
     },
     {
@@ -9191,6 +11489,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 139,
+        "nasDelayed": 27.08,
+        "nasDelayMinutes": 1823
       }
     },
     {
@@ -9217,6 +11522,13 @@
           "intlSeats": 0,
           "freightLbs": 192413
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 628,
+        "arrDel15": 78,
+        "nasDelayed": 9.679999999999998,
+        "nasDelayMinutes": 661
       }
     },
     {
@@ -9269,6 +11581,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 629,
+        "arrDel15": 100,
+        "nasDelayed": 11.790000000000001,
+        "nasDelayMinutes": 879
       }
     },
     {
@@ -9347,6 +11666,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 504,
+        "arrDel15": 21,
+        "nasDelayed": 0.12,
+        "nasDelayMinutes": 8
       }
     },
     {
@@ -9373,6 +11699,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 652,
+        "arrDel15": 109,
+        "nasDelayed": 10.48,
+        "nasDelayMinutes": 552
       }
     },
     {
@@ -9399,6 +11732,13 @@
           "intlSeats": 0,
           "freightLbs": 99071
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 298,
+        "arrDel15": 54,
+        "nasDelayed": 10.93,
+        "nasDelayMinutes": 676
       }
     },
     {
@@ -9451,6 +11791,13 @@
           "intlSeats": 0,
           "freightLbs": 126744
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 626,
+        "arrDel15": 144,
+        "nasDelayed": 25.450000000000003,
+        "nasDelayMinutes": 1683
       }
     },
     {
@@ -9503,6 +11850,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 727,
+        "arrDel15": 183,
+        "nasDelayed": 16.89,
+        "nasDelayMinutes": 1922
       }
     },
     {
@@ -9529,6 +11883,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 658,
+        "arrDel15": 86,
+        "nasDelayed": 7.999999999999998,
+        "nasDelayMinutes": 543
       }
     },
     {
@@ -9555,6 +11916,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 363,
+        "arrDel15": 71,
+        "nasDelayed": 7.640000000000001,
+        "nasDelayMinutes": 454
       }
     },
     {
@@ -9607,6 +11975,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 596,
+        "arrDel15": 130,
+        "nasDelayed": 7.040000000000001,
+        "nasDelayMinutes": 570
       }
     },
     {
@@ -9633,6 +12008,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 305,
+        "arrDel15": 44,
+        "nasDelayed": 3.5199999999999996,
+        "nasDelayMinutes": 544
       }
     },
     {
@@ -9685,6 +12067,13 @@
           "intlSeats": 0,
           "freightLbs": 48434
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 299,
+        "arrDel15": 75,
+        "nasDelayed": 15.86,
+        "nasDelayMinutes": 790
       }
     },
     {
@@ -9737,6 +12126,13 @@
           "intlSeats": 0,
           "freightLbs": 172167
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 628,
+        "arrDel15": 38,
+        "nasDelayed": 1.2000000000000002,
+        "nasDelayMinutes": 58
       }
     },
     {
@@ -9815,6 +12211,13 @@
           "intlSeats": 0,
           "freightLbs": 354708
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 628,
+        "arrDel15": 84,
+        "nasDelayed": 8.11,
+        "nasDelayMinutes": 506
       }
     },
     {
@@ -9919,6 +12322,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 99,
+        "nasDelayed": 13.940000000000001,
+        "nasDelayMinutes": 939
       }
     },
     {
@@ -9971,6 +12381,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 652,
+        "arrDel15": 97,
+        "nasDelayed": 7.920000000000001,
+        "nasDelayMinutes": 532
       }
     },
     {
@@ -10023,6 +12440,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 336,
+        "arrDel15": 47,
+        "nasDelayed": 6.01,
+        "nasDelayMinutes": 203
       }
     },
     {
@@ -10075,6 +12499,13 @@
           "intlSeats": 157,
           "freightLbs": 21253
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 237,
+        "arrDel15": 72,
+        "nasDelayed": 14.719999999999999,
+        "nasDelayMinutes": 1112
       }
     },
     {
@@ -10205,6 +12636,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 138,
+        "nasDelayed": 30.740000000000006,
+        "nasDelayMinutes": 2739
       }
     },
     {
@@ -10335,6 +12773,13 @@
           "intlSeats": 0,
           "freightLbs": 27018
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 86,
+        "arrDel15": 14,
+        "nasDelayed": 3.09,
+        "nasDelayMinutes": 64
       }
     },
     {
@@ -10413,6 +12858,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 119,
+        "nasDelayed": 14.709999999999999,
+        "nasDelayMinutes": 1823
       }
     },
     {
@@ -10517,6 +12969,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 120,
+        "nasDelayed": 17.089999999999996,
+        "nasDelayMinutes": 1551
       }
     },
     {
@@ -10595,6 +13054,13 @@
           "intlSeats": 0,
           "freightLbs": 3190
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 627,
+        "arrDel15": 129,
+        "nasDelayed": 17.510000000000005,
+        "nasDelayMinutes": 1275
       }
     },
     {
@@ -10673,6 +13139,13 @@
           "intlSeats": 0,
           "freightLbs": 0
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 628,
+        "arrDel15": 137,
+        "nasDelayed": 22.18,
+        "nasDelayMinutes": 1347
       }
     },
     {
@@ -10933,6 +13406,13 @@
           "intlSeats": 0,
           "freightLbs": 206282
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 238,
+        "arrDel15": 50,
+        "nasDelayed": 17.27,
+        "nasDelayMinutes": 951
       }
     },
     {
@@ -14417,6 +16897,13 @@
           "intlSeats": 0,
           "freightLbs": 60765
         }
+      },
+      "delays": {
+        "year": "2025",
+        "arrFlights": 105,
+        "arrDel15": 9,
+        "nasDelayed": 1.47,
+        "nasDelayMinutes": 51
       }
     },
     {

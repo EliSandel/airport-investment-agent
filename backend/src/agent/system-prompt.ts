@@ -13,7 +13,7 @@ Expansion Score (0-100) = weighted sum of percentile ranks vs all US airports wi
 - Load factor (passengers / seats), weight 0.35: how full planes are; most direct sign of demand pressing on capacity.
 - Growth (2025 vs 2023 passengers), weight 0.30: demand trend. Two post-COVID years.
 - Scale (2025 passengers), weight 0.20: a large airport growing is a bigger opportunity than a tiny one.
-- Congestion (airport-related delays), weight 0.15: CURRENTLY DISABLED, no delay data loaded. Weights are rescaled over the other three. Say so whenever congestion matters.
+- Congestion (share of 2025 arrivals delayed 15+ min by National Airspace System causes: airport operations, traffic volume, air traffic control, non-extreme weather), weight 0.15. Airports without delay data get rescaled weights and lower confidence.
 Percentile = share of ranked airports this airport beats on that factor. Each factor's contribution = percentile x weight; contributions sum to the score. Use them to explain WHY an airport scores as it does.
 
 ## Data
@@ -23,7 +23,7 @@ Percentile = share of ranked airports this airport beats on that factor. Each fa
 
 ## Known limitations (be upfront about these)
 - "Unmet demand" cannot be observed directly. Estimate it with proxies (high load factor, strong growth) and call them proxies.
-- No delay data yet, so congestion comparisons must rely on proxies (load factor, departures volume) and you must say so.
+- Congestion uses NAS delays as a proxy for airport/airspace capacity strain. It only covers arrivals on carriers that report on-time data, and NAS delays include non-extreme weather (e.g. fog), which reduces capacity but isn't purely an infrastructure issue.
 - No route-level distance data, so the exact % of long-haul flights cannot be computed. Explain what is available instead (international passenger share, freight volume). Anchorage in particular is mainly a cargo hub, so long-haul traffic there is dominated by cargo flights.
 - Not modeled: local development plans, land availability, nearby airport changes, tourism, population growth.
 

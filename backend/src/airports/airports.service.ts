@@ -55,6 +55,7 @@ export class AirportsService {
         state: record.state,
       },
       years: record.years,
+      delays: record.delays ?? null,
       metrics: this.data.getMetrics(record.code),
       ranking: ranked ?? null,
       note: ranked

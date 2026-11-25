@@ -6,17 +6,17 @@
  * Steps:
  *   1. Fetch yearly passenger / seat totals per airport from the BTS Open Data API (Socrata)
  *   2. Fetch the OurAirports reference table (state, coordinates, name)
- *   3. Join the two on the airport code, keeping US airports only
- *   4. Save a snapshot to data/airports.json
+ *   3. Read BTS delay causes from a downloaded snapshot (no API exists for it)
+ *   4. Join everything on the airport code (US airports only) and save
  *
- * Design note: this script only collects FACTS (raw yearly sums).
- * Derived metrics (load factor, growth, scores) are computed in the scoring
- * module, so every formula lives in one tested place.
+ * Design note: this script only collects FACTS (raw sums).
+ * Derived metrics (load factor, growth, congestion, scores) are computed in the
+ * scoring module, so every formula lives in one tested place.
  */
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { parse } from 'csv-parse/sync';
-import { AirportRecord } from '../src/data/airport.types';
+import { AirportRecord, DelayStats } from '../src/data/airport.types';
 
 // ---------------------------------------------------------------- config
 
@@ -29,6 +29,10 @@ const BTS_URL = 'https://data.transportation.gov/resource/r495-tyji.json';
 /** OurAirports public reference data: codes, names, states, coordinates. */
 const OURAIRPORTS_URL =
   'https://davidmegginson.github.io/ourairports-data/airports.csv';
+
+/** BTS On-Time "Delay Causes" download (snapshot, no API available). */
+const DELAYS_CSV = resolve(__dirname, '../../data/raw/Airline_Delay_Cause.csv');
+const DELAY_YEAR = '2025';
 
 const OUTPUT_PATH = resolve(__dirname, '../../data/airports.json');
 
@@ -55,11 +59,23 @@ interface AirportInfo {
   type: string;
 }
 
+/** One row of the delay causes CSV: one carrier at one airport in one month. */
+interface DelayRow {
+  year: string;
+  airport: string;
+  arr_flights: string;
+  arr_del15: string;
+  nas_ct: string;
+  nas_delay: string;
+}
+
+/** Socrata and CSVs give numbers as strings, sometimes empty. */
+const num = (v: string | undefined): number => (v ? Number(v) : 0);
+
 // ---------------------------------------------------------------- step 1: BTS API
 
 async function fetchBtsTotals(): Promise<BtsRow[]> {
-  // Same SoQL query you tested in the browser: the API sums the months for us,
-  // so we download ~2-3k rows instead of 136k.
+  // The API sums the months for us, so we download ~2-3k rows instead of 136k.
   const params = new URLSearchParams({
     $select: [
       'origin_airport_code',
@@ -101,8 +117,8 @@ const TYPE_RANK: Record<string, number> = {
 async function fetchAirportReference(): Promise<Map<string, AirportInfo>> {
   const res = await fetch(OURAIRPORTS_URL);
   if (!res.ok) throw new Error(`OurAirports error ${res.status}`);
+
   // csv-parse handles quoted fields like "Boston, MA" correctly.
-  // columns: true -> each row becomes an object keyed by the header names.
   const rows = parse(await res.text(), {
     columns: true,
     skip_empty_lines: true,
@@ -131,21 +147,56 @@ async function fetchAirportReference(): Promise<Map<string, AirportInfo>> {
   return byCode;
 }
 
-// ---------------------------------------------------------------- step 3: join + save
+// ---------------------------------------------------------------- step 3: delay causes
 
-/** Socrata returns numbers as strings, and missing sums as undefined. */
-const num = (v: string | undefined): number => (v ? Number(v) : 0);
+/** Sums all carriers and months per airport for DELAY_YEAR. */
+function loadDelays(): Map<string, DelayStats> {
+  const byAirport = new Map<string, DelayStats>();
+  if (!existsSync(DELAYS_CSV)) {
+    console.warn(`    ${DELAYS_CSV} not found: skipping delays`);
+    return byAirport;
+  }
+
+  const rows = parse(readFileSync(DELAYS_CSV, 'utf-8'), {
+    columns: true,
+    skip_empty_lines: true,
+    trim: true, // some BTS exports have spaces in headers/values
+  }) as DelayRow[];
+
+  for (const r of rows) {
+    if (r.year !== DELAY_YEAR) continue;
+    const s = byAirport.get(r.airport) ?? {
+      year: DELAY_YEAR,
+      arrFlights: 0,
+      arrDel15: 0,
+      nasDelayed: 0,
+      nasDelayMinutes: 0,
+    };
+    s.arrFlights += num(r.arr_flights);
+    s.arrDel15 += num(r.arr_del15);
+    s.nasDelayed += num(r.nas_ct);
+    s.nasDelayMinutes += num(r.nas_delay);
+    byAirport.set(r.airport, s);
+  }
+  return byAirport;
+}
+
+// ---------------------------------------------------------------- step 4: join + save
 
 async function main() {
-  console.log('1/3 Fetching BTS totals...');
+  console.log('1/4 Fetching BTS totals...');
   const btsRows = await fetchBtsTotals();
   console.log(`    ${btsRows.length} airport-year rows`);
 
-  console.log('2/3 Fetching OurAirports reference data...');
+  console.log('2/4 Fetching OurAirports reference data...');
   const reference = await fetchAirportReference();
   console.log(`    ${reference.size} US airports with an IATA code`);
 
-  console.log('3/3 Joining...');
+  console.log('3/4 Reading delay causes snapshot...');
+  const delays = loadDelays();
+  console.log(`    ${delays.size} airports with ${DELAY_YEAR} delay data`);
+
+  console.log('4/4 Joining...');
   const airports = new Map<string, AirportRecord>();
   const unmatched = new Set<string>();
 
@@ -168,6 +219,7 @@ async function main() {
         lat: info.lat,
         lon: info.lon,
         years: {},
+        delays: delays.get(code),
       };
       airports.set(code, record);
     }
@@ -196,10 +248,12 @@ async function main() {
       sources: {
         traffic: `BTS T-100 Segment Summary By Origin Airport (${BTS_URL})`,
         reference: `OurAirports (${OURAIRPORTS_URL})`,
+        delays: `BTS Airline On-Time Statistics and Delay Causes, ${DELAY_YEAR} (downloaded snapshot)`,
       },
       notes: [
         'Passengers = departing passengers reported on T-100 by all carriers (about half of total airport traffic).',
         'US airports only (iso_country = US); territories and foreign airports are excluded.',
+        'Delays cover arrivals on carriers that report on-time data only.',
       ],
     },
     airports: sorted,
@@ -208,17 +262,13 @@ async function main() {
   mkdirSync(dirname(OUTPUT_PATH), { recursive: true });
   writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2));
 
+  const withDelays = sorted.filter((a) => a.delays).length;
   console.log(`\nSaved ${sorted.length} airports to ${OUTPUT_PATH}`);
+  console.log(`${withDelays} of them have delay data`);
   console.log(
     `Skipped ${unmatched.size} codes not found as US airports, e.g.: ` +
       [...unmatched].slice(0, 10).join(', '),
   );
-  console.log('\nTop 5 by passengers:');
-  for (const a of sorted.slice(0, 5)) {
-    console.log(
-      `  ${a.code} (${a.state})  ${a.years[latest]?.passengers.toLocaleString()}`,
-    );
-  }
 }
 
 main().catch((err) => {

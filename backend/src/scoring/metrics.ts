@@ -20,10 +20,7 @@ export interface AirportMetrics {
   congestion: number | null; // NAS delay signal (not wired up yet)
 }
 
-export function computeMetrics(
-  airport: AirportRecord,
-  congestion: number | null = null,
-): AirportMetrics {
+export function computeMetrics(airport: AirportRecord): AirportMetrics {
   const current = airport.years[CURRENT_YEAR];
   const base = airport.years[BASE_YEAR];
 
@@ -39,7 +36,7 @@ export function computeMetrics(
       current && current.seats > 0 ? current.passengers / current.seats : null,
 
     growth:
-      current && base && base.passengers > 0   // check if base.passenger > 0 because we dont want to divide by 0
+      current && base && base.passengers > 0 // check if base.passenger > 0 because we dont want to divide by 0
         ? current.passengers / base.passengers - 1
         : null,
 
@@ -48,6 +45,10 @@ export function computeMetrics(
         ? current.intlPassengers / current.passengers
         : null,
 
-    congestion,
+    // Share of arrivals delayed by airport/airspace (NAS) causes.
+    congestion:
+      airport.delays && airport.delays.arrFlights > 0
+        ? airport.delays.nasDelayed / airport.delays.arrFlights
+        : null,
   };
 }

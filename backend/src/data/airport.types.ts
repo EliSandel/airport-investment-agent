@@ -20,6 +20,7 @@ export interface AirportRecord {
   lat: number;
   lon: number;
   years: Record<string, YearStats>; // keyed by year, e.g. "2025"
+  delays?: DelayStats; // optional: only airports served by reporting carriers
 }
 
 export interface AirportsFile {
@@ -30,4 +31,12 @@ export interface AirportsFile {
     notes: string[];
   };
   airports: AirportRecord[];
+}
+
+export interface DelayStats {
+  year: string;
+  arrFlights: number; // arriving flights (reporting carriers only)
+  arrDel15: number; // arrivals delayed 15+ minutes, any cause
+  nasDelayed: number; // arrivals delayed by National Airspace System causes
+  nasDelayMinutes: number;
 }

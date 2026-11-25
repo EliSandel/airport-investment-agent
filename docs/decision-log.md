@@ -71,3 +71,11 @@ the congestion question is answered only with proxies because delay data isn't l
 separating tool data from model knowledge in answers
 
 Weights are configurable, so the agent can run sensitivity analysis; robust picks (PWM) stay on top across weightings
+
+
+congestion = nas_ct / arr_flights
+           = share of arriving flights delayed 15+ min by "National Airspace System" causes
+arr_flights = arriving flights
+nas_ct = flights delayed by NAS causes: airport operations, heavy traffic, air traffic control, non-extreme weather
+
+higher congestion increases the score" is a deliberate interpretation. Strain signals that capacity is needed. Someone could argue the opposite, so it's worth stating
