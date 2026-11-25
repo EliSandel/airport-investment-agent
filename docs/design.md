@@ -117,6 +117,8 @@ Delays by cause (2025) | BTS Airline On-Time Statistics & Delay Causes | Officia
 - The BTS data has no state column, so I can't filter "New England" without it.
 - I join the two on the airport code.
 
+T-100 Segment route file for flight routes for distances
+
 **Why a cached snapshot instead of calling the API on every question**
 - The data is historical (2023, 2025) and doesn't change.
 - Ranking needs all airports at once (percentiles compare every airport), so live calls per question would be slow.
@@ -210,9 +212,8 @@ all the design decisions were mine, the factors, weights, percentiles, data sour
 ### Limitations
 1. **Unmet demand can't be measured directly.** The agent estimates it with proxies (full planes, growth, delays) and says so.
 2. **Delay data only covers the larger airlines** (those required to report on-time data). Airports without it are scored on the other three factors and marked lower confidence.
-3. **Long-haul percentage can't be calculated.** The data has only the *average* distance per flight, and you can't get a percentage from an average. Route-level data would be needed.
-4. **Gate and terminal capacity aren't publicly available**, which would be the most direct signal of terminal strain.
-5. **The data is a snapshot.** It doesn't update by itself (the creation date is stored in the file).
+3. **Gate and terminal capacity aren't publicly available**, which would be the most direct signal of terminal strain.
+4. **The data is a snapshot.** It doesn't update by itself (the creation date is stored in the file).
 
 ### Not modeled (relevant, but no reliable public data per airport)
 From my original list of what would make an airport worth renovating:
@@ -237,7 +238,7 @@ This simply call to compare_airports tool with la and stanta ana
 
 Question 3
 What is the percentage of long haul flights out of Anchorage airport?
-tool get_airpot with anc
+tool get_long_haul_share with anc
 cant be answered accurately. the data only has the average flight distance and not each routes distance
 The agent says so and gives what is known instead: international passenger share and freight volume.
 What would fix it: route-level BTS data (each route with its distance), then count flights above a threshold (e.g. 3,000 miles).
