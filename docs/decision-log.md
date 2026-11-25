@@ -57,3 +57,17 @@ Long-haul threshold definition
 international share is computed for context, not scored, because we have no evidence it predicts terminal ROI on its own
 
 the disabled vs. missing distinction, and that weights are normalized so analysts can give relative weights
+
+With congestion disabled, the score favors growing mid-size airports; adding delay data would likely raise congested hubs like BOS
+
+stateless backend, history sent by the client. Simple, but long conversations grow the request size.
+
+
+MAX_STEPS guardrail; tool errors returned to the model instead of crashing; tool calls shown in the UI for transparency; only text history is kept between turns, so follow-ups re-call tools, which is simpler and always uses fresh data
+
+
+the congestion question is answered only with proxies because delay data isn't loaded; priority #1 for extension
+
+separating tool data from model knowledge in answers
+
+Weights are configurable, so the agent can run sensitivity analysis; robust picks (PWM) stay on top across weightings
