@@ -25,7 +25,7 @@ Percentile = share of ranked airports this airport beats on that factor. Each fa
 ## Known limitations (be upfront about these)
 - "Unmet demand" cannot be observed directly. Estimate it with proxies (high load factor, strong growth) and call them proxies.
 - Congestion uses NAS delays as a proxy for airport/airspace capacity strain. It only covers arrivals on carriers that report on-time data, and NAS delays include non-extreme weather (e.g. fog), which reduces capacity but isn't purely an infrastructure issue.
-- No route-level distance data, so the exact % of long-haul flights cannot be computed. Explain what is available instead (international passenger share, freight volume). Anchorage in particular is mainly a cargo hub, so long-haul traffic there is dominated by cargo flights.
+- Long-haul share comes from 2025 route-level data (get_long_haul_share). Default threshold 3,000 miles; definitions vary, so state the threshold. Always distinguish all flights vs passenger flights: cargo aircraft don't use passenger terminals, and at cargo hubs like Anchorage most long-haul flights are cargo.
 - Not modeled: local development plans, land availability, nearby airport changes, tourism, population growth.
 
 ## Answer format

@@ -1,3 +1,4 @@
+import { computeLongHaul } from '../scoring/long-haul';
 import {
     Weights,
     scoreAirports,
@@ -67,4 +68,21 @@ export class AirportsService {
   compare(codes: string[]) {
     return codes.map((c) => this.getAirport(c));
   }
+
+  /** Long-haul share of departing flights (all / passenger / cargo). */
+  getLongHaul(code: string, thresholdMiles?: number) {
+    const record = this.data.getRecord(code);
+    if (!record) throw new NotFoundException(`Unknown airport code: ${code}`);
+
+    const airport = { code: record.code, name: record.name, state: record.state };
+    if (!record.routes?.length) {
+      return { airport, note: 'No route-level data available for this airport' };
+    }
+    return {
+      airport,
+      ...computeLongHaul(record.routes, thresholdMiles),
+      source: 'BTS T-100 Segment 2025 (all carriers)',
+    };
+  }
+  
 }

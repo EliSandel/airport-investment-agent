@@ -21,6 +21,7 @@ export interface AirportRecord {
   lon: number;
   years: Record<string, YearStats>; // keyed by year, e.g. "2025"
   delays?: DelayStats; // optional: only airports served by reporting carriers
+  routes?: RouteStats[]; // optional: from the T-100 route-level snapshot}
 }
 
 export interface AirportsFile {
@@ -39,4 +40,14 @@ export interface DelayStats {
   arrDel15: number; // arrivals delayed 15+ minutes, any cause
   nasDelayed: number; // arrivals delayed by National Airspace System causes
   nasDelayMinutes: number;
+}
+
+
+/** One route from this airport, summed over all carriers and months of 2025. */
+export interface RouteStats {
+  dest: string; // destination airport code
+  distance: number; // great-circle distance in statute miles
+  departures: number; // all flights flown on this route
+  cargoDepartures: number; // flights by cargo aircraft (AIRCRAFT_CONFIG = 2)
+  passengers: number;
 }

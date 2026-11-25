@@ -16,7 +16,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { parse } from 'csv-parse/sync';
-import { AirportRecord, DelayStats } from '../src/data/airport.types';
+import { AirportRecord, DelayStats, RouteStats } from '../src/data/airport.types';
 
 // ---------------------------------------------------------------- config
 
@@ -33,6 +33,7 @@ const OURAIRPORTS_URL =
 /** BTS On-Time "Delay Causes" download (snapshot, no API available). */
 const DELAYS_CSV = resolve(__dirname, '../../data/raw/Airline_Delay_Cause.csv');
 const DELAY_YEAR = '2025';
+const ROUTES_CSV = resolve(__dirname, '../../data/raw/T100_SEGMENT_2025.csv');
 
 const OUTPUT_PATH = resolve(__dirname, '../../data/airports.json');
 
@@ -67,6 +68,16 @@ interface DelayRow {
   arr_del15: string;
   nas_ct: string;
   nas_delay: string;
+}
+
+/** One row of the T-100 segment CSV: one carrier, route, aircraft type and month. */
+interface RouteRow {
+  DEPARTURES_PERFORMED: string;
+  PASSENGERS: string;
+  DISTANCE: string;
+  ORIGIN: string;
+  DEST: string;
+  AIRCRAFT_CONFIG: string;
 }
 
 /** Socrata and CSVs give numbers as strings, sometimes empty. */
@@ -181,6 +192,53 @@ function loadDelays(): Map<string, DelayStats> {
   return byAirport;
 }
 
+
+/** Sums all carriers, aircraft and months into one entry per route (origin -> dest). */
+function loadRoutes(): Map<string, RouteStats[]> {
+  if (!existsSync(ROUTES_CSV)) {
+    console.warn(`    ${ROUTES_CSV} not found: skipping routes`);
+    return new Map();
+  }
+
+  const rows = parse(readFileSync(ROUTES_CSV, 'utf-8'), {
+    columns: true,
+    skip_empty_lines: true,
+    trim: true,
+  }) as RouteRow[];
+
+  const byOrigin = new Map<string, Map<string, RouteStats>>();
+  for (const r of rows) {
+    const departures = num(r.DEPARTURES_PERFORMED);
+    // Skip flights that never flew, and local "routes" (takeoff and landing at the same airport).
+    if (departures === 0 || r.ORIGIN === r.DEST) continue;
+
+    const destinations = byOrigin.get(r.ORIGIN) ?? new Map<string, RouteStats>();
+    byOrigin.set(r.ORIGIN, destinations);
+
+    const route = destinations.get(r.DEST) ?? {
+      dest: r.DEST,
+      distance: num(r.DISTANCE),
+      departures: 0,
+      cargoDepartures: 0,
+      passengers: 0,
+    };
+    route.departures += departures;
+    if (r.AIRCRAFT_CONFIG === '2') route.cargoDepartures += departures; // 2 = cargo aircraft
+    route.passengers += num(r.PASSENGERS);
+    destinations.set(r.DEST, route);
+  }
+
+  // Map of maps -> map of arrays, busiest routes first.
+  const result = new Map<string, RouteStats[]>();
+  for (const [origin, destinations] of byOrigin) {
+    result.set(
+      origin,
+      [...destinations.values()].sort((a, b) => b.departures - a.departures),
+    );
+  }
+  return result;
+}
+
 // ---------------------------------------------------------------- step 4: join + save
 
 async function main() {
@@ -195,6 +253,10 @@ async function main() {
   console.log('3/4 Reading delay causes snapshot...');
   const delays = loadDelays();
   console.log(`    ${delays.size} airports with ${DELAY_YEAR} delay data`);
+
+  console.log('    Reading route-level snapshot...');
+  const routes = loadRoutes();
+  console.log(`    ${routes.size} origin airports with route data`);
 
   console.log('4/4 Joining...');
   const airports = new Map<string, AirportRecord>();
@@ -220,6 +282,7 @@ async function main() {
         lon: info.lon,
         years: {},
         delays: delays.get(code),
+        routes: routes.get(code),
       };
       airports.set(code, record);
     }
@@ -249,6 +312,7 @@ async function main() {
         traffic: `BTS T-100 Segment Summary By Origin Airport (${BTS_URL})`,
         reference: `OurAirports (${OURAIRPORTS_URL})`,
         delays: `BTS Airline On-Time Statistics and Delay Causes, ${DELAY_YEAR} (downloaded snapshot)`,
+        routes: 'BTS T-100 Segment (All Carriers), 2025 (downloaded snapshot)',
       },
       notes: [
         'Passengers = departing passengers reported on T-100 by all carriers (about half of total airport traffic).',

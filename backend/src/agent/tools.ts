@@ -20,7 +20,8 @@ export const TOOLS: Anthropic.Tool[] = [
         states: {
           type: 'array',
           items: { type: 'string' },
-          description: 'Two-letter US state codes. Omit for a national ranking.',
+          description:
+            'Two-letter US state codes. Omit for a national ranking.',
         },
         weights: {
           type: 'object',
@@ -73,6 +74,26 @@ export const TOOLS: Anthropic.Tool[] = [
       required: ['codes'],
     },
   },
+  {
+    name: 'get_long_haul_share',
+    description:
+      'Share of departing flights from an airport that fly long-haul routes ' +
+      '(route distance >= threshold, default 3000 statute miles), reported separately ' +
+      'for all flights, passenger flights and cargo flights, plus the top long-haul ' +
+      'destinations. Based on 2025 BTS T-100 route data. Always state the threshold used; ' +
+      'definitions of long-haul vary.',
+    input_schema: {
+      type: 'object',
+      properties: {
+        code: { type: 'string', description: 'IATA airport code, e.g. "ANC".' },
+        threshold_miles: {
+          type: 'number',
+          description: 'Minimum route distance for long-haul. Default 3000.',
+        },
+      },
+      required: ['code'],
+    },
+  },
 ];
 
 /** Maps a tool call from Claude to the real (deterministic) service method. */
@@ -95,6 +116,11 @@ export function runTool(
       return airports.getAirport(String(args.code));
     case 'compare_airports':
       return airports.compare((args.codes as string[]).slice(0, 5)); //guardrail: limit to 5 airports
+    case 'get_long_haul_share':
+      return airports.getLongHaul(
+        String(args.code),
+        args.threshold_miles as number | undefined,
+      );
     default:
       throw new Error(`Unknown tool: ${name}`);
   }
