@@ -82,3 +82,4 @@ button.example {
   text-align: left;
 }
 button.example:hover { border-color: #2563eb; }
+.mic.listening { background: #dc2626; color: white; }
