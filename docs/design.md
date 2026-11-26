@@ -159,6 +159,9 @@ System prompt rules - get every number from tools, never invent. label general k
 The known limitations are written into the prompt (no long-haul data, NAS delays include weather, etc.), so the agent admits them instead of guessing
 max 6 tool steps so the llm wont loop forever
 tool calls are shown in the ui above each answer so the user can see which tool was called
+Input validation: max 30 messages, 4,000 characters each, plain-text user/assistant messages only, so tool results can't be forged by the client
+Prompt rules against injection; the main protection is that the agent only has read-only tools(least privelage)
+
 
 
 The frontend sends the whole conversation each time, and the backend doesn't store anything. That's how follow-up questions work ("what if growth mattered twice as much?")
